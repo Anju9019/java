@@ -1,16 +1,16 @@
 class Container{
-        public static void main(String hospital[]){
-          int hospitalId = 1;
-
-          String  containername  ="Fridge Storage Boxes ";
-		  String material ="Plastic";
-		  int productBreadth = 10;
-		 
+	
+  
+ static String  containername  ="Fridge Storage Boxes ";
+ static String material ="Plastic";
+ static  int productBreadth = 10;
+ 
+public static void main(String Container []){
+	
 		  System.out.println("the containername is "+ containername);
 		   System.out.println("the container material is"+ material);
 		    System.out.println("the productBreadth is"+ productBreadth);
-		
-		System.out.println("the hospital references is "+hospitalId);
+	
 		}
 		
 		}

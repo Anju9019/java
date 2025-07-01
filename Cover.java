@@ -1,13 +1,14 @@
 class Cover{
-        public static void main(String sunglasses[]){
+     
+         static  String coverName  ="Golden Sunglasses ";
+		 static  String material ="Taffeta";
+		 static String brand =" Maruti Suzuki";
+		 static String modelName =" Swift Dzire";
+         static String Pattern ="Solid";
+		 static int productBreadth=2;
+		 
+		  public static void main(String sunglasses[]){
     
-
-          String coverName  ="Golden Sunglasses ";
-		  String material ="Taffeta";
-		  String brand =" Maruti Suzuki";
-		  String modelName =" Swift Dzire";
-          String Pattern ="Solid";
-		  int productBreadth=2;
 		 
 		  System.out.println("the covername is "+ coverName);
 		  System.out.println("the cover material is"+ material);

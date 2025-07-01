@@ -1,0 +1,87 @@
+class Stadium {
+    static int stadiumId ;
+    static String name ;
+    static String location ;
+    static int capacity ;
+    static String sport ;
+    static boolean isCovered ;
+    static float ticketPrice ;
+    static double area ;
+    static char category ;
+    static long contactNumber ;
+    static String openDays ;
+    static boolean hasParking ;
+    static short entryGates ;
+    static byte vipBoxes ;
+    static String builtYear ;
+    static boolean internationalEvents;
+    static String architect ;
+    static boolean nightLights ;
+    static String turfType ;
+    static String cityOwned ;
+
+    public static void main(String[] args) {
+        System.out.println("stadium id: " + stadiumId);
+        System.out.println("name: " + name);
+        System.out.println("location: " + location);
+        System.out.println("capacity: " + capacity);
+        System.out.println("sport: " + sport);
+        System.out.println("is covered: " + isCovered);
+        System.out.println("ticket price: " + ticketPrice);
+        System.out.println("area: " + area);
+        System.out.println("category: " + category);
+        System.out.println("contact number: " + contactNumber);
+        System.out.println("open days: " + openDays);
+        System.out.println("has parking: " + hasParking);
+        System.out.println("entry gates: " + entryGates);
+        System.out.println("vip boxes: " + vipBoxes);
+        System.out.println("built year: " + builtYear);
+        System.out.println("international events: " + internationalEvents);
+        System.out.println("architect: " + architect);
+        System.out.println("night lights: " + nightLights);
+        System.out.println("turf type: " + turfType);
+        System.out.println("city owned: " + cityOwned);
+		
+		 stadiumId = 8;
+     name = "National Stadium";
+   location = "Delhi";
+    capacity = 60000;
+     sport = "Cricket";
+     isCovered = false;
+    ticketPrice = 1200.50f;
+    area = 50000.75;
+   category = 'A';
+    contactNumber = 9876543211L;
+    openDays = "All Days";
+     hasParking = true;
+     entryGates = 20;
+     vipBoxes = 5;
+   builtYear = "1982";
+     internationalEvents = true;
+     architect = "ABC Designers";
+     nightLights = true;
+    turfType = "Natural Grass";
+     cityOwned = "Yes";
+
+        System.out.println("stadium id: " + stadiumId);
+        System.out.println("name: " + name);
+        System.out.println("location: " + location);
+        System.out.println("capacity: " + capacity);
+        System.out.println("sport: " + sport);
+        System.out.println("is covered: " + isCovered);
+        System.out.println("ticket price: " + ticketPrice);
+        System.out.println("area: " + area);
+        System.out.println("category: " + category);
+        System.out.println("contact number: " + contactNumber);
+        System.out.println("open days: " + openDays);
+        System.out.println("has parking: " + hasParking);
+        System.out.println("entry gates: " + entryGates);
+        System.out.println("vip boxes: " + vipBoxes);
+        System.out.println("built year: " + builtYear);
+        System.out.println("international events: " + internationalEvents);
+        System.out.println("architect: " + architect);
+        System.out.println("night lights: " + nightLights);
+        System.out.println("turf type: " + turfType);
+        System.out.println("city owned: " + cityOwned);
+    }
+}

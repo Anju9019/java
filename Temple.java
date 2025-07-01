@@ -1,10 +1,83 @@
-class  Temple {
-	
+class Temple {
+    static int templeId ;
+    static String name ;
+    static String location ;
+    static int dailyVisitors ;
+    static String deity ;
+    static boolean isOpenToday ;
+    static float entryFee ;
+    static double area ;
+    static char category ;
+    static long contactNumber;
+    static String openHours ;
+    static boolean hasCulturalEvents ;
+    static byte sanctums ;
+    static String builtCentury ;
+    static boolean isUNESCOWorldHeritage ;
+    static String managingTrust ;
+    static boolean onlineDarshan ;
+    static String templeArchitecture ;
+    static String city ;
 
-      public static void main( String  xworkz[] ){
+    public static void main(String[] args) {
+        System.out.println("temple id: " + templeId);
+        System.out.println("name: " + name);
+        System.out.println("location: " + location);
+        System.out.println("daily visitors: " + dailyVisitors);
+        System.out.println("deity: " + deity);
+        System.out.println("is open today: " + isOpenToday);
+        System.out.println("entry fee: " + entryFee);
+        System.out.println("area: " + area);
+        System.out.println("category: " + category);
+        System.out.println("contact number: " + contactNumber);
+        System.out.println("open hours: " + openHours);
+        System.out.println("has cultural events: " + hasCulturalEvents);
+        System.out.println("sanctums: " + sanctums);
+        System.out.println("built century: " + builtCentury);
+        System.out.println("unesco world heritage: " + isUNESCOWorldHeritage);
+        System.out.println("managing trust: " + managingTrust);
+        System.out.println("online darshan: " + onlineDarshan);
+        System.out.println("temple architecture: " + templeArchitecture);
+        System.out.println("city: " + city);
+		
+		 templeId = 15;
+    name = "Meenakshi Temple";
+     location = "Madurai, Tamil Nadu";
+    dailyVisitors = 10000;
+     deity = "Meenakshi Amman";
+  isOpenToday = true;
+     entryFee = 20.0f;
+    area = 65000.0;
+     category = 'H';
+     contactNumber = 9876543255L;
+    openHours = "5AM - 9PM";
+    hasCulturalEvents = true;
+    sanctums = 3;
+     builtCentury = "6th Century";
+   isUNESCOWorldHeritage = false;
+    managingTrust = "HR & CE Department";
+    onlineDarshan = true;
+templeArchitecture = "Dravidian";
+ city = "Madurai";
 
-        System.out.println("it is an emotional" ); 
-
-
-     }
+        System.out.println("temple id: " + templeId);
+        System.out.println("name: " + name);
+        System.out.println("location: " + location);
+        System.out.println("daily visitors: " + dailyVisitors);
+        System.out.println("deity: " + deity);
+        System.out.println("is open today: " + isOpenToday);
+        System.out.println("entry fee: " + entryFee);
+        System.out.println("area: " + area);
+        System.out.println("category: " + category);
+        System.out.println("contact number: " + contactNumber);
+        System.out.println("open hours: " + openHours);
+        System.out.println("has cultural events: " + hasCulturalEvents);
+        System.out.println("sanctums: " + sanctums);
+        System.out.println("built century: " + builtCentury);
+        System.out.println("unesco world heritage: " + isUNESCOWorldHeritage);
+        System.out.println("managing trust: " + managingTrust);
+        System.out.println("online darshan: " + onlineDarshan);
+        System.out.println("temple architecture: " + templeArchitecture);
+        System.out.println("city: " + city);
+    }
 }
