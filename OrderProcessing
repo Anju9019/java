@@ -1,0 +1,14 @@
+class OrderProcessing {
+    public static void main(String order[]) {
+     System.out.println("Main Started");
+ processOrder();
+System.out.println("Main Ended");
+    }
+  public static void processOrder() {
+   System.out.println("Processing customer order");
+    }
+}
+
+
+		
+		
