@@ -1,11 +1,9 @@
 class DatabaseConnector {
-    public static void main(String args[]) {
- System.out.println("Main Started");
-  connectDatabase();
-  System.out.println("Main Ended");
-    }
-
-    public static void connectDatabase() {
-        System.out.println("Connected to database");
+    public static void main(String Database[]) {
+        System.out.println("Main Started");
+        String username = "admin";
+        String password = "secret";
+        DBHelper.connectDatabase( username, password);  
+        System.out.println("Main Ended");
     }
 }

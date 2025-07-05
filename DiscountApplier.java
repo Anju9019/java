@@ -1,11 +1,9 @@
 class DiscountApplier {
-    public static void main(String args[]) {
- System.out.println("Main Started");
-applyDiscount();
- System.out.println("Main Ended");
-    }
-
-public static void applyDiscount() {
-        System.out.println("Discount applied");
+    public static void main(String[] DiscountApplier) {
+        System.out.println("Main Started");
+        double price = 2000.00;
+        double discountPercent = 15.0;
+        DiscountHelper.applyDiscount(price, discountPercent); 
+        System.out.println("Main Ended");
     }
 }

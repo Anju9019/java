@@ -1,26 +1,9 @@
-class UserAuthentication{
-public static void main(String user[]){
-System.out.println("main started");
-login();
-System.out.println("main endded");
+class UserAuthentication {
+    public static void main(String user[]) {
+        System.out.println("Main Started");
+     String username = "Anju";
+    String password = "Anju123";
+   AuthHelper.login(username, password);  
+        System.out.println("Main Ended");
+    }
 }
-public static void login(){
-
- System.out.println("the user is login successfully");
- }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-

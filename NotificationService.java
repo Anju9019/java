@@ -1,11 +1,10 @@
 class NotificationService {
-    public static void main(String args[]) {
-  System.out.println("Main Started");
-sendNotification();
-      System.out.println("Main Ended");
-    }
+    public static void main(String notification[]) {
+        System.out.println("Main Started");
+        String reciver = "user@example.com";
+        String message = "Your order has been shipped";
+   NotificationHelper.sendNotification(reciver, message);  
 
-    public static void sendNotification() {
-        System.out.println("Notification sent");
+ System.out.println("Main Ended");
     }
 }

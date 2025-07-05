@@ -1,10 +1,9 @@
-class InventoryManager{
-public static void main(String inventory[]){
-System.out.println("main started");
-updatedInventry()
-System.out.println("main started");
-}
-public static void updateInventory() {
- System.out.println("Inventory updated");
+class InventoryManager {
+    public static void main(String inventory[]) {
+        System.out.println("Main Started");
+String productName = "Desk";
+ int quantity = 76;
+        InventoryHelper.updateInventory(productName, quantity);  
+        System.out.println("Main Ended");
     }
 }
