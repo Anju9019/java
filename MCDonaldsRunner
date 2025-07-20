@@ -1,0 +1,10 @@
+class MCDonaldsRunner {
+    public static void main(String args[]) {
+        boolean isUserRegistered = MCDonalds.RegisterUser("Anjali", "B D", 800001, 9090909090L, "anju5951@gmail.com");
+
+        if (isUserRegistered) {
+            MCDonalds.getRegisterDetails();
+        }
+        System.out.println("The user is registered " + isUserRegistered);
+    }
+}
