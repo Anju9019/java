@@ -1,330 +1,230 @@
-class KingRunner{
-public sttaic void main(String[] king){
+class KingRunner {
+    public static void main(String[] args) {
 
-System.out.println("main started");
+        System.out.println("Main started");
 
-King king1 = new King();
-king1.kingId = 201;
-king1.kingName = "Ashoka";
-king1.kingdom = "Maurya Empire";
-king1.reignStartYear = -268;
-king1.reignEndYear = -232;
-king1.isFamous = true;
-System.out.println("King 1: ");
-System.out.println("King ID: " + king1.kingId);
-System.out.println("King Name: " + king1.kingName);
-System.out.println("Kingdom: " + king1.kingdom);
-System.out.println("Reign Start Year: " + king1.reignStartYear);
-System.out.println("Reign End Year: " + king1.reignEndYear);
-System.out.println("Is Famous: " + king1.isFamous);
-System.out.println();
+        King k1 = new King(1, "Alexander the Great", "Macedonia", -336, -323, true);
+        /*
+        k1.kingId = 1;
+        k1.kingName = "Alexander the Great";
+        k1.kingdom = "Macedonia";
+        k1.reignStartYear = -336;
+        k1.reignEndYear = -323;
+        k1.isFamous = true;
+        */
 
-King king2 = new King();
-king2.kingId = 202;
-king2.kingName = "Akbar";
-king2.kingdom = "Mughal Empire";
-king2.reignStartYear = 1556;
-king2.reignEndYear = 1605;
-king2.isFamous = true;
-System.out.println("King 2: ");
-System.out.println("King ID: " + king2.kingId);
-System.out.println("King Name: " + king2.kingName);
-System.out.println("Kingdom: " + king2.kingdom);
-System.out.println("Reign Start Year: " + king2.reignStartYear);
-System.out.println("Reign End Year: " + king2.reignEndYear);
-System.out.println("Is Famous: " + king2.isFamous);
-System.out.println();
+        King k2 = new King(2, "Ashoka the Great", "Maurya Empire", -268, -232, true);
+        /*
+        k2.kingId = 2;
+        k2.kingName = "Ashoka the Great";
+        k2.kingdom = "Maurya Empire";
+        k2.reignStartYear = -268;
+        k2.reignEndYear = -232;
+        k2.isFamous = true;
+        */
 
-King king3 = new King();
-king3.kingId = 203;
-king3.kingName = "Chandragupta";
-king3.kingdom = "Maurya Empire";
-king3.reignStartYear = -321;
-king3.reignEndYear = -297;
-king3.isFamous = false;
-System.out.println("King 3: ");
-System.out.println("King ID: " + king3.kingId);
-System.out.println("King Name: " + king3.kingName);
-System.out.println("Kingdom: " + king3.kingdom);
-System.out.println("Reign Start Year: " + king3.reignStartYear);
-System.out.println("Reign End Year: " + king3.reignEndYear);
-System.out.println("Is Famous: " + king3.isFamous);
-System.out.println();
+        King k3 = new King(3, "Akbar", "Mughal Empire", 1556, 1605, true);
+        /*
+        k3.kingId = 3;
+        k3.kingName = "Akbar";
+        k3.kingdom = "Mughal Empire";
+        k3.reignStartYear = 1556;
+        k3.reignEndYear = 1605;
+        k3.isFamous = true;
+        */
 
-King king4 = new King();
-king4.kingId = 204;
-king4.kingName = "Harsha";
-king4.kingdom = "Kanauj";
-king4.reignStartYear = 606;
-king4.reignEndYear = 647;
-king4.isFamous = false;
-System.out.println("King 4: ");
-System.out.println("King ID: " + king4.kingId);
-System.out.println("King Name: " + king4.kingName);
-System.out.println("Kingdom: " + king4.kingdom);
-System.out.println("Reign Start Year: " + king4.reignStartYear);
-System.out.println("Reign End Year: " + king4.reignEndYear);
-System.out.println("Is Famous: " + king4.isFamous);
-System.out.println();
+        King k4 = new King(4, "Chandragupta Maurya", "Maurya Empire", -321, -297, true);
+        /*
+        k4.kingId = 4;
+        k4.kingName = "Chandragupta Maurya";
+        k4.kingdom = "Maurya Empire";
+        k4.reignStartYear = -321;
+        k4.reignEndYear = -297;
+        k4.isFamous = true;
+        */
 
-King king5 = new King();
-king5.kingId = 205;
-king5.kingName = "Raja Raja Chola";
-king5.kingdom = "Chola Empire";
-king5.reignStartYear = 985;
-king5.reignEndYear = 1014;
-king5.isFamous = true;
-System.out.println("King 5: ");
-System.out.println("King ID: " + king5.kingId);
-System.out.println("King Name: " + king5.kingName);
-System.out.println("Kingdom: " + king5.kingdom);
-System.out.println("Reign Start Year: " + king5.reignStartYear);
-System.out.println("Reign End Year: " + king5.reignEndYear);
-System.out.println("Is Famous: " + king5.isFamous);
-System.out.println();
+        King k5 = new King(5, "Louis XIV", "France", 1643, 1715, true);
+        /*
+        k5.kingId = 5;
+        k5.kingName = "Louis XIV";
+        k5.kingdom = "France";
+        k5.reignStartYear = 1643;
+        k5.reignEndYear = 1715;
+        k5.isFamous = true;
+        */
 
-King king6 = new King();
-king6.kingId = 206;
-king6.kingName = "Prithviraj Chauhan";
-king6.kingdom = "Chauhan Dynasty";
-king6.reignStartYear = 1178;
-king6.reignEndYear = 1192;
-king6.isFamous = true;
-System.out.println("King 6: ");
-System.out.println("King ID: " + king6.kingId);
-System.out.println("King Name: " + king6.kingName);
-System.out.println("Kingdom: " + king6.kingdom);
-System.out.println("Reign Start Year: " + king6.reignStartYear);
-System.out.println("Reign End Year: " + king6.reignEndYear);
-System.out.println("Is Famous: " + king6.isFamous);
-System.out.println();
+        King k6 = new King(6, "Tutankhamun", "Ancient Egypt", -1332, -1323, true);
+        /*
+        k6.kingId = 6;
+        k6.kingName = "Tutankhamun";
+        k6.kingdom = "Ancient Egypt";
+        k6.reignStartYear = -1332;
+        k6.reignEndYear = -1323;
+        k6.isFamous = true;
+        */
 
-King king7 = new King();
-king7.kingId = 207;
-king7.kingName = "Tipu Sultan";
-king7.kingdom = "Mysore Kingdom";
-king7.reignStartYear = 1782;
-king7.reignEndYear = 1799;
-king7.isFamous = true;
-System.out.println("King 7: ");
-System.out.println("King ID: " + king7.kingId);
-System.out.println("King Name: " + king7.kingName);
-System.out.println("Kingdom: " + king7.kingdom);
-System.out.println("Reign Start Year: " + king7.reignStartYear);
-System.out.println("Reign End Year: " + king7.reignEndYear);
-System.out.println("Is Famous: " + king7.isFamous);
-System.out.println();
+        King k7 = new King(7, "Henry VIII", "England", 1509, 1547, true);
+        /*
+        k7.kingId = 7;
+        k7.kingName = "Henry VIII";
+        k7.kingdom = "England";
+        k7.reignStartYear = 1509;
+        k7.reignEndYear = 1547;
+        k7.isFamous = true;
+        */
 
-King king8 = new King();
-king8.kingId = 208;
-king8.kingName = "Shivaji";
-king8.kingdom = "Maratha Empire";
-king8.reignStartYear = 1674;
-king8.reignEndYear = 1680;
-king8.isFamous = true;
-System.out.println("King 8: ");
-System.out.println("King ID: " + king8.kingId);
-System.out.println("King Name: " + king8.kingName);
-System.out.println("Kingdom: " + king8.kingdom);
-System.out.println("Reign Start Year: " + king8.reignStartYear);
-System.out.println("Reign End Year: " + king8.reignEndYear);
-System.out.println("Is Famous: " + king8.isFamous);
-System.out.println();
+        King k8 = new King(8, "Raja Raja Chola I", "Chola Dynasty", 985, 1014, true);
+        /*
+        k8.kingId = 8;
+        k8.kingName = "Raja Raja Chola I";
+        k8.kingdom = "Chola Dynasty";
+        k8.reignStartYear = 985;
+        k8.reignEndYear = 1014;
+        k8.isFamous = true;
+        */
 
-King king9 = new King();
-king9.kingId = 209;
-king9.kingName = "Bahadur Shah Zafar";
-king9.kingdom = "Mughal Empire";
-king9.reignStartYear = 1837;
-king9.reignEndYear = 1857;
-king9.isFamous = false;
-System.out.println("King 9: ");
-System.out.println("King ID: " + king9.kingId);
-System.out.println("King Name: " + king9.kingName);
-System.out.println("Kingdom: " + king9.kingdom);
-System.out.println("Reign Start Year: " + king9.reignStartYear);
-System.out.println("Reign End Year: " + king9.reignEndYear);
-System.out.println("Is Famous: " + king9.isFamous);
-System.out.println();
+        King k9 = new King(9, "Philip II", "Spain", 1556, 1598, true);
+        /*
+        k9.kingId = 9;
+        k9.kingName = "Philip II";
+        k9.kingdom = "Spain";
+        k9.reignStartYear = 1556;
+        k9.reignEndYear = 1598;
+        k9.isFamous = true;
+        */
 
-King king10 = new King();
-king10.kingId = 210;
-king10.kingName = "Samudragupta";
-king10.kingdom = "Gupta Empire";
-king10.reignStartYear = 335;
-king10.reignEndYear = 375;
-king10.isFamous = true;
-System.out.println("King 10: ");
-System.out.println("King ID: " + king10.kingId);
-System.out.println("King Name: " + king10.kingName);
-System.out.println("Kingdom: " + king10.kingdom);
-System.out.println("Reign Start Year: " + king10.reignStartYear);
-System.out.println("Reign End Year: " + king10.reignEndYear);
-System.out.println("Is Famous: " + king10.isFamous);
-System.out.println();
+        King k10 = new King(10, "Cyrus the Great", "Persian Empire", -559, -530, true);
+        /*
+        k10.kingId = 10;
+        k10.kingName = "Cyrus the Great";
+        k10.kingdom = "Persian Empire";
+        k10.reignStartYear = -559;
+        k10.reignEndYear = -530;
+        k10.isFamous = true;
+        */
 
-King king11 = new King();
-king11.kingId = 211;
-king11.kingName = "Pulakeshin II";
-king11.kingdom = "Chalukya Dynasty";
-king11.reignStartYear = 610;
-king11.reignEndYear = 642;
-king11.isFamous = true;
-System.out.println("King 11: ");
-System.out.println("King ID: " + king11.kingId);
-System.out.println("King Name: " + king11.kingName);
-System.out.println("Kingdom: " + king11.kingdom);
-System.out.println("Reign Start Year: " + king11.reignStartYear);
-System.out.println("Reign End Year: " + king11.reignEndYear);
-System.out.println("Is Famous: " + king11.isFamous);
-System.out.println();
+        King k11 = new King(11, "George III", "United Kingdom", 1760, 1820, true);
+        /*
+        k11.kingId = 11;
+        k11.kingName = "George III";
+        k11.kingdom = "United Kingdom";
+        k11.reignStartYear = 1760;
+        k11.reignEndYear = 1820;
+        k11.isFamous = true;
+        */
 
-King king12 = new King();
-king12.kingId = 212;
-king12.kingName = "Rajendra Chola";
-king12.kingdom = "Chola Empire";
-king12.reignStartYear = 1014;
-king12.reignEndYear = 1044;
-king12.isFamous = true;
-System.out.println("King 12: ");
-System.out.println("King ID: " + king12.kingId);
-System.out.println("King Name: " + king12.kingName);
-System.out.println("Kingdom: " + king12.kingdom);
-System.out.println("Reign Start Year: " + king12.reignStartYear);
-System.out.println("Reign End Year: " + king12.reignEndYear);
-System.out.println("Is Famous: " + king12.isFamous);
-System.out.println();
+        King k12 = new King(12, "Shivaji Maharaj", "Maratha Empire", 1674, 1680, true);
+        /*
+        k12.kingId = 12;
+        k12.kingName = "Shivaji Maharaj";
+        k12.kingdom = "Maratha Empire";
+        k12.reignStartYear = 1674;
+        k12.reignEndYear = 1680;
+        k12.isFamous = true;
+        */
 
-King king13 = new King();
-king13.kingId = 213;
-king13.kingName = "Samrat Vikramaditya";
-king13.kingdom = "Gupta Empire";
-king13.reignStartYear = 375;
-king13.reignEndYear = 415;
-king13.isFamous = true;
-System.out.println("King 13: ");
-System.out.println("King ID: " + king13.kingId);
-System.out.println("King Name: " + king13.kingName);
-System.out.println("Kingdom: " + king13.kingdom);
-System.out.println("Reign Start Year: " + king13.reignStartYear);
-System.out.println("Reign End Year: " + king13.reignEndYear);
-System.out.println("Is Famous: " + king13.isFamous);
-System.out.println();
+        King k13 = new King(13, "Charlemagne", "Frankish Empire", 768, 814, true);
+        /*
+        k13.kingId = 13;
+        k13.kingName = "Charlemagne";
+        k13.kingdom = "Frankish Empire";
+        k13.reignStartYear = 768;
+        k13.reignEndYear = 814;
+        k13.isFamous = true;
+        */
 
-King king14 = new King();
-king14.kingId = 214;
-king14.kingName = "Krishnadevaraya";
-king14.kingdom = "Vijayanagara Empire";
-king14.reignStartYear = 1509;
-king14.reignEndYear = 1529;
-king14.isFamous = true;
-System.out.println("King 14: ");
-System.out.println("King ID: " + king14.kingId);
-System.out.println("King Name: " + king14.kingName);
-System.out.println("Kingdom: " + king14.kingdom);
-System.out.println("Reign Start Year: " + king14.reignStartYear);
-System.out.println("Reign End Year: " + king14.reignEndYear);
-System.out.println("Is Famous: " + king14.isFamous);
-System.out.println();
+        King k14 = new King(14, "Solomon", "Israel", -970, -931, true);
+        /*
+        k14.kingId = 14;
+        k14.kingName = "Solomon";
+        k14.kingdom = "Israel";
+        k14.reignStartYear = -970;
+        k14.reignEndYear = -931;
+        k14.isFamous = true;
+        */
 
-King king15 = new King();
-king15.kingId = 215;
-king15.kingName = "Bahadur Shah";
-king15.kingdom = "Mughal Empire";
-king15.reignStartYear = 1526;
-king15.reignEndYear = 1530;
-king15.isFamous = false;
-System.out.println("King 15: ");
-System.out.println("King ID: " + king15.kingId);
-System.out.println("King Name: " + king15.kingName);
-System.out.println("Kingdom: " + king15.kingdom);
-System.out.println("Reign Start Year: " + king15.reignStartYear);
-System.out.println("Reign End Year: " + king15.reignEndYear);
-System.out.println("Is Famous: " + king15.isFamous);
-System.out.println();
+        King k15 = new King(15, "Nebuchadnezzar II", "Babylon", -605, -562, true);
+        /*
+        k15.kingId = 15;
+        k15.kingName = "Nebuchadnezzar II";
+        k15.kingdom = "Babylon";
+        k15.reignStartYear = -605;
+        k15.reignEndYear = -562;
+        k15.isFamous = true;
+        */
 
-King king16 = new King();
-king16.kingId = 216;
-king16.kingName = "Maharana Pratap";
-king16.kingdom = "Mewar Kingdom";
-king16.reignStartYear = 1572;
-king16.reignEndYear = 1597;
-king16.isFamous = true;
-System.out.println("King 16: ");
-System.out.println("King ID: " + king16.kingId);
-System.out.println("King Name: " + king16.kingName);
-System.out.println("Kingdom: " + king16.kingdom);
-System.out.println("Reign Start Year: " + king16.reignStartYear);
-System.out.println("Reign End Year: " + king16.reignEndYear);
-System.out.println("Is Famous: " + king16.isFamous);
-System.out.println();
+        King k16 = new King(16, "Peter the Great", "Russia", 1682, 1725, true);
+        /*
+        k16.kingId = 16;
+        k16.kingName = "Peter the Great";
+        k16.kingdom = "Russia";
+        k16.reignStartYear = 1682;
+        k16.reignEndYear = 1725;
+        k16.isFamous = true;
+        */
 
-King king17 = new King();
-king17.kingId = 217;
-king17.kingName = "Raja Bhoja";
-king17.kingdom = "Paramara Dynasty";
-king17.reignStartYear = 1010;
-king17.reignEndYear = 1055;
-king17.isFamous = true;
-System.out.println("King 17: ");
-System.out.println("King ID: " + king17.kingId);
-System.out.println("King Name: " + king17.kingName);
-System.out.println("Kingdom: " + king17.kingdom);
-System.out.println("Reign Start Year: " + king17.reignStartYear);
-System.out.println("Reign End Year: " + king17.reignEndYear);
-System.out.println("Is Famous: " + king17.isFamous);
-System.out.println();
+        King k17 = new King(17, "Harsha", "Vardhana Empire", 606, 647, true);
+        /*
+        k17.kingId = 17;
+        k17.kingName = "Harsha";
+        k17.kingdom = "Vardhana Empire";
+        k17.reignStartYear = 606;
+        k17.reignEndYear = 647;
+        k17.isFamous = true;
+        */
 
-King king18 = new King();
-king18.kingId = 218;
-king18.kingName = "Harshavardhana";
-king18.kingdom = "Pushyabhuti Dynasty";
-king18.reignStartYear = 606;
-king18.reignEndYear = 647;
-king18.isFamous = false;
-System.out.println("King 18: ");
-System.out.println("King ID: " + king18.kingId);
-System.out.println("King Name: " + king18.kingName);
-System.out.println("Kingdom: " + king18.kingdom);
-System.out.println("Reign Start Year: " + king18.reignStartYear);
-System.out.println("Reign End Year: " + king18.reignEndYear);
-System.out.println("Is Famous: " + king18.isFamous);
-System.out.println();
+        King k18 = new King(18, "William the Conqueror", "England", 1066, 1087, true);
+        /*
+        k18.kingId = 18;
+        k18.kingName = "William the Conqueror";
+        k18.kingdom = "England";
+        k18.reignStartYear = 1066;
+        k18.reignEndYear = 1087;
+        k18.isFamous = true;
+        */
 
-King king19 = new King();
-king19.kingId = 219;
-king19.kingName = "Raja Harishchandra";
-king19.kingdom = "Ikshvaku Dynasty";
-king19.reignStartYear = -1300;
-king19.reignEndYear = -1275;
-king19.isFamous = true;
-System.out.println("King 19: ");
-System.out.println("King ID: " + king19.kingId);
-System.out.println("King Name: " + king19.kingName);
-System.out.println("Kingdom: " + king19.kingdom);
-System.out.println("Reign Start Year: " + king19.reignStartYear);
-System.out.println("Reign End Year: " + king19.reignEndYear);
-System.out.println("Is Famous: " + king19.isFamous);
-System.out.println();
+        King k19 = new King(19, "Ramses II", "Ancient Egypt", -1279, -1213, true);
+        /*
+        k19.kingId = 19;
+        k19.kingName = "Ramses II";
+        k19.kingdom = "Ancient Egypt";
+        k19.reignStartYear = -1279;
+        k19.reignEndYear = -1213;
+        k19.isFamous = true;
+        */
 
-King king20 = new King();
-king20.kingId = 220;
-king20.kingName = "Raja Vikramaditya";
-king20.kingdom = "Malwa Kingdom";
-king20.reignStartYear = -75;
-king20.reignEndYear = 25;
-king20.isFamous = true;
-System.out.println("King 20: ");
-System.out.println("King ID: " + king20.kingId);
-System.out.println("King Name: " + king20.kingName);
-System.out.println("Kingdom: " + king20.kingdom);
-System.out.println("Reign Start Year: " + king20.reignStartYear);
-System.out.println("Reign End Year: " + king20.reignEndYear);
-System.out.println("Is Famous: " + king20.isFamous);
-System.out.println();
+        King k20 = new King(20, "Faisal I", "Iraq", 1921, 1933, false);
+        /*
+        k20.kingId = 20;
+        k20.kingName = "Faisal I";
+        k20.kingdom = "Iraq";
+        k20.reignStartYear = 1921;
+        k20.reignEndYear = 1933;
+        k20.isFamous = false;
+        */
 
-System.out.println("main ended");
+        // Printing all kings' info
+        k1.printKingInfo();
+        k2.printKingInfo();
+        k3.printKingInfo();
+        k4.printKingInfo();
+        k5.printKingInfo();
+        k6.printKingInfo();
+        k7.printKingInfo();
+        k8.printKingInfo();
+        k9.printKingInfo();
+        k10.printKingInfo();
+        k11.printKingInfo();
+        k12.printKingInfo();
+        k13.printKingInfo();
+        k14.printKingInfo();
+        k15.printKingInfo();
+        k16.printKingInfo();
+        k17.printKingInfo();
+        k18.printKingInfo();
+        k19.printKingInfo();
+        k20.printKingInfo();
 
-
-}
+        System.out.println("Main ended");
+    }
 }

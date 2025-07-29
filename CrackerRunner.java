@@ -1,329 +1,229 @@
-class CrackerRunner{
-public static void main(Sring[] crack){
-System.out.println("main started");
-Crackers cracker1 = new Crackers();
-cracker1.crackerId = 101;
-cracker1.crackerName = "Sparkle Blast";
-cracker1.crackerType = "Sparkler";
-cracker1.duration = 30;
-cracker1.price = 50.0;
-cracker1.isSafe = true;
-System.out.println("Cracker 1: ");
-System.out.println("Cracker ID: " + cracker1.crackerId);
-System.out.println("Cracker Name: " + cracker1.crackerName);
-System.out.println("Cracker Type: " + cracker1.crackerType);
-System.out.println("Duration (seconds): " + cracker1.duration);
-System.out.println("Price (INR): " + cracker1.price);
-System.out.println("Is Safe: " + cracker1.isSafe);
-System.out.println();
+class CrackerRunner {
+    public static void main(String[] args) {
 
-Crackers cracker2 = new Crackers();
-cracker2.crackerId = 102;
-cracker2.crackerName = "Boomer Thunder";
-cracker2.crackerType = "Flower Pot";
-cracker2.duration = 45;
-cracker2.price = 80.0;
-cracker2.isSafe = false;
-System.out.println("Cracker 2: ");
-System.out.println("Cracker ID: " + cracker2.crackerId);
-System.out.println("Cracker Name: " + cracker2.crackerName);
-System.out.println("Cracker Type: " + cracker2.crackerType);
-System.out.println("Duration (seconds): " + cracker2.duration);
-System.out.println("Price (INR): " + cracker2.price);
-System.out.println("Is Safe: " + cracker2.isSafe);
-System.out.println();
+        System.out.println("Main started");
 
-Crackers cracker3 = new Crackers();
-cracker3.crackerId = 103;
-cracker3.crackerName = "Star Light";
-cracker3.crackerType = "Chakra";
-cracker3.duration = 60;
-cracker3.price = 120.0;
-cracker3.isSafe = true;
-System.out.println("Cracker 3: ");
-System.out.println("Cracker ID: " + cracker3.crackerId);
-System.out.println("Cracker Name: " + cracker3.crackerName);
-System.out.println("Cracker Type: " + cracker3.crackerType);
-System.out.println("Duration (seconds): " + cracker3.duration);
-System.out.println("Price (INR): " + cracker3.price);
-System.out.println("Is Safe: " + cracker3.isSafe);
-System.out.println();
+        Cracker cracker1 = new Cracker(1, "Sparkler", "Handheld", 60, 50.0, true);
+        /*
+        cracker1.crackerId = 1;
+        cracker1.crackerName = "Sparkler";
+        cracker1.crackerType = "Handheld";
+        cracker1.duration = 60;
+        cracker1.price = 50.0;
+        cracker1.isSafe = true;
+        */
 
-Crackers cracker4 = new Crackers();
-cracker4.crackerId = 104;
-cracker4.crackerName = "Thunder Clap";
-cracker4.crackerType = "Anar";
-cracker4.duration = 40;
-cracker4.price = 70.0;
-cracker4.isSafe = false;
-System.out.println("Cracker 4: ");
-System.out.println("Cracker ID: " + cracker4.crackerId);
-System.out.println("Cracker Name: " + cracker4.crackerName);
-System.out.println("Cracker Type: " + cracker4.crackerType);
-System.out.println("Duration (seconds): " + cracker4.duration);
-System.out.println("Price (INR): " + cracker4.price);
-System.out.println("Is Safe: " + cracker4.isSafe);
-System.out.println();
+        Cracker cracker2 = new Cracker(2, "Rocket", "Aerial", 30, 100.0, false);
+        /*
+        cracker2.crackerId = 2;
+        cracker2.crackerName = "Rocket";
+        cracker2.crackerType = "Aerial";
+        cracker2.duration = 30;
+        cracker2.price = 100.0;
+        cracker2.isSafe = false;
+        */
 
-Crackers cracker5 = new Crackers();
-cracker5.crackerId = 105;
-cracker5.crackerName = "Lightning Flash";
-cracker5.crackerType = "Chakri";
-cracker5.duration = 35;
-cracker5.price = 55.0;
-cracker5.isSafe = true;
-System.out.println("Cracker 5: ");
-System.out.println("Cracker ID: " + cracker5.crackerId);
-System.out.println("Cracker Name: " + cracker5.crackerName);
-System.out.println("Cracker Type: " + cracker5.crackerType);
-System.out.println("Duration (seconds): " + cracker5.duration);
-System.out.println("Price (INR): " + cracker5.price);
-System.out.println("Is Safe: " + cracker5.isSafe);
-System.out.println();
+        Cracker cracker3 = new Cracker(3, "Flowerpot", "Ground", 45, 120.0, true);
+        /*
+        cracker3.crackerId = 3;
+        cracker3.crackerName = "Flowerpot";
+        cracker3.crackerType = "Ground";
+        cracker3.duration = 45;
+        cracker3.price = 120.0;
+        cracker3.isSafe = true;
+        */
 
-Crackers cracker6 = new Crackers();
-cracker6.crackerId = 106;
-cracker6.crackerName = "Rainbow Wheel";
-cracker6.crackerType = "Phooljhadi";
-cracker6.duration = 50;
-cracker6.price = 90.0;
-cracker6.isSafe = true;
-System.out.println("Cracker 6: ");
-System.out.println("Cracker ID: " + cracker6.crackerId);
-System.out.println("Cracker Name: " + cracker6.crackerName);
-System.out.println("Cracker Type: " + cracker6.crackerType);
-System.out.println("Duration (seconds): " + cracker6.duration);
-System.out.println("Price (INR): " + cracker6.price);
-System.out.println("Is Safe: " + cracker6.isSafe);
-System.out.println();
+        Cracker cracker4 = new Cracker(4, "Bombshell", "Aerial", 20, 150.0, false);
+        /*
+        cracker4.crackerId = 4;
+        cracker4.crackerName = "Bombshell";
+        cracker4.crackerType = "Aerial";
+        cracker4.duration = 20;
+        cracker4.price = 150.0;
+        cracker4.isSafe = false;
+        */
 
-Crackers cracker7 = new Crackers();
-cracker7.crackerId = 107;
-cracker7.crackerName = "Fire Star";
-cracker7.crackerType = "Flower Pot";
-cracker7.duration = 55;
-cracker7.price = 100.0;
-cracker7.isSafe = false;
-System.out.println("Cracker 7: ");
-System.out.println("Cracker ID: " + cracker7.crackerId);
-System.out.println("Cracker Name: " + cracker7.crackerName);
-System.out.println("Cracker Type: " + cracker7.crackerType);
-System.out.println("Duration (seconds): " + cracker7.duration);
-System.out.println("Price (INR): " + cracker7.price);
-System.out.println("Is Safe: " + cracker7.isSafe);
-System.out.println();
+        Cracker cracker5 = new Cracker(5, "Chakri", "Ground", 90, 70.0, true);
+        /*
+        cracker5.crackerId = 5;
+        cracker5.crackerName = "Chakri";
+        cracker5.crackerType = "Ground";
+        cracker5.duration = 90;
+        cracker5.price = 70.0;
+        cracker5.isSafe = true;
+        */
 
-Crackers cracker8 = new Crackers();
-cracker8.crackerId = 108;
-cracker8.crackerName = "Golden Spark";
-cracker8.crackerType = "Sparkler";
-cracker8.duration = 25;
-cracker8.price = 45.0;
-cracker8.isSafe = true;
-System.out.println("Cracker 8: ");
-System.out.println("Cracker ID: " + cracker8.crackerId);
-System.out.println("Cracker Name: " + cracker8.crackerName);
-System.out.println("Cracker Type: " + cracker8.crackerType);
-System.out.println("Duration (seconds): " + cracker8.duration);
-System.out.println("Price (INR): " + cracker8.price);
-System.out.println("Is Safe: " + cracker8.isSafe);
-System.out.println();
+        Cracker cracker6 = new Cracker(6, "Anar", "Fountain", 40, 80.0, true);
+        /*
+        cracker6.crackerId = 6;
+        cracker6.crackerName = "Anar";
+        cracker6.crackerType = "Fountain";
+        cracker6.duration = 40;
+        cracker6.price = 80.0;
+        cracker6.isSafe = true;
+        */
 
-Crackers cracker9 = new Crackers();
-cracker9.crackerId = 109;
-cracker9.crackerName = "Silver Ring";
-cracker9.crackerType = "Chakri";
-cracker9.duration = 60;
-cracker9.price = 130.0;
-cracker9.isSafe = true;
-System.out.println("Cracker 9: ");
-System.out.println("Cracker ID: " + cracker9.crackerId);
-System.out.println("Cracker Name: " + cracker9.crackerName);
-System.out.println("Cracker Type: " + cracker9.crackerType);
-System.out.println("Duration (seconds): " + cracker9.duration);
-System.out.println("Price (INR): " + cracker9.price);
-System.out.println("Is Safe: " + cracker9.isSafe);
-System.out.println();
+        Cracker cracker7 = new Cracker(7, "Sparklers Deluxe", "Handheld", 75, 90.0, true);
+        /*
+        cracker7.crackerId = 7;
+        cracker7.crackerName = "Sparklers Deluxe";
+        cracker7.crackerType = "Handheld";
+        cracker7.duration = 75;
+        cracker7.price = 90.0;
+        cracker7.isSafe = true;
+        */
 
-Crackers cracker10 = new Crackers();
-cracker10.crackerId = 110;
-cracker10.crackerName = "Fire Wheel";
-cracker10.crackerType = "Chakra";
-cracker10.duration = 50;
-cracker10.price = 95.0;
-cracker10.isSafe = false;
-System.out.println("Cracker 10: ");
-System.out.println("Cracker ID: " + cracker10.crackerId);
-System.out.println("Cracker Name: " + cracker10.crackerName);
-System.out.println("Cracker Type: " + cracker10.crackerType);
-System.out.println("Duration (seconds): " + cracker10.duration);
-System.out.println("Price (INR): " + cracker10.price);
-System.out.println("Is Safe: " + cracker10.isSafe);
-System.out.println();
+        Cracker cracker8 = new Cracker(8, "Thunderbolt", "Aerial", 15, 200.0, false);
+        /*
+        cracker8.crackerId = 8;
+        cracker8.crackerName = "Thunderbolt";
+        cracker8.crackerType = "Aerial";
+        cracker8.duration = 15;
+        cracker8.price = 200.0;
+        cracker8.isSafe = false;
+        */
 
-Crackers cracker11 = new Crackers();
-cracker11.crackerId = 111;
-cracker11.crackerName = "Sparkling Sun";
-cracker11.crackerType = "Sparkler";
-cracker11.duration = 40;
-cracker11.price = 65.0;
-cracker11.isSafe = true;
-System.out.println("Cracker 11: ");
-System.out.println("Cracker ID: " + cracker11.crackerId);
-System.out.println("Cracker Name: " + cracker11.crackerName);
-System.out.println("Cracker Type: " + cracker11.crackerType);
-System.out.println("Duration (seconds): " + cracker11.duration);
-System.out.println("Price (INR): " + cracker11.price);
-System.out.println("Is Safe: " + cracker11.isSafe);
-System.out.println();
+        Cracker cracker9 = new Cracker(9, "Wheel", "Ground", 60, 110.0, true);
+        /*
+        cracker9.crackerId = 9;
+        cracker9.crackerName = "Wheel";
+        cracker9.crackerType = "Ground";
+        cracker9.duration = 60;
+        cracker9.price = 110.0;
+        cracker9.isSafe = true;
+        */
 
-Crackers cracker12 = new Crackers();
-cracker12.crackerId = 112;
-cracker12.crackerName = "Flame Burst";
-cracker12.crackerType = "Anar";
-cracker12.duration = 35;
-cracker12.price = 55.0;
-cracker12.isSafe = false;
-System.out.println("Cracker 12: ");
-System.out.println("Cracker ID: " + cracker12.crackerId);
-System.out.println("Cracker Name: " + cracker12.crackerName);
-System.out.println("Cracker Type: " + cracker12.crackerType);
-System.out.println("Duration (seconds): " + cracker12.duration);
-System.out.println("Price (INR): " + cracker12.price);
-System.out.println("Is Safe: " + cracker12.isSafe);
-System.out.println();
+        Cracker cracker10 = new Cracker(10, "Roman Candle", "Aerial", 50, 130.0, false);
+        /*
+        cracker10.crackerId = 10;
+        cracker10.crackerName = "Roman Candle";
+        cracker10.crackerType = "Aerial";
+        cracker10.duration = 50;
+        cracker10.price = 130.0;
+        cracker10.isSafe = false;
+        */
 
-Crackers cracker13 = new Crackers();
-cracker13.crackerId = 113;
-cracker13.crackerName = "Magic Spark";
-cracker13.crackerType = "Phooljhadi";
-cracker13.duration = 45;
-cracker13.price = 85.0;
-cracker13.isSafe = true;
-System.out.println("Cracker 13: ");
-System.out.println("Cracker ID: " + cracker13.crackerId);
-System.out.println("Cracker Name: " + cracker13.crackerName);
-System.out.println("Cracker Type: " + cracker13.crackerType);
-System.out.println("Duration (seconds): " + cracker13.duration);
-System.out.println("Price (INR): " + cracker13.price);
-System.out.println("Is Safe: " + cracker13.isSafe);
-System.out.println();
+        Cracker cracker11 = new Cracker(11, "Chakkar", "Ground", 85, 95.0, true);
+        /*
+        cracker11.crackerId = 11;
+        cracker11.crackerName = "Chakkar";
+        cracker11.crackerType = "Ground";
+        cracker11.duration = 85;
+        cracker11.price = 95.0;
+        cracker11.isSafe = true;
+        */
 
-Crackers cracker14 = new Crackers();
-cracker14.crackerId = 114;
-cracker14.crackerName = "Blue Spark";
-cracker14.crackerType = "Sparkler";
-cracker14.duration = 30;
-cracker14.price = 50.0;
-cracker14.isSafe = true;
-System.out.println("Cracker 14: ");
-System.out.println("Cracker ID: " + cracker14.crackerId);
-System.out.println("Cracker Name: " + cracker14.crackerName);
-System.out.println("Cracker Type: " + cracker14.crackerType);
-System.out.println("Duration (seconds): " + cracker14.duration);
-System.out.println("Price (INR): " + cracker14.price);
-System.out.println("Is Safe: " + cracker14.isSafe);
-System.out.println();
+        Cracker cracker12 = new Cracker(12, "Phuljhadi", "Handheld", 55, 60.0, true);
+        /*
+        cracker12.crackerId = 12;
+        cracker12.crackerName = "Phuljhadi";
+        cracker12.crackerType = "Handheld";
+        cracker12.duration = 55;
+        cracker12.price = 60.0;
+        cracker12.isSafe = true;
+        */
 
-Crackers cracker15 = new Crackers();
-cracker15.crackerId = 115;
-cracker15.crackerName = "Red Glow";
-cracker15.crackerType = "Chakra";
-cracker15.duration = 55;
-cracker15.price = 100.0;
-cracker15.isSafe = false;
-System.out.println("Cracker 15: ");
-System.out.println("Cracker ID: " + cracker15.crackerId);
-System.out.println("Cracker Name: " + cracker15.crackerName);
-System.out.println("Cracker Type: " + cracker15.crackerType);
-System.out.println("Duration (seconds): " + cracker15.duration);
-System.out.println("Price (INR): " + cracker15.price);
-System.out.println("Is Safe: " + cracker15.isSafe);
-System.out.println();
+        Cracker cracker13 = new Cracker(13, "Catherine Wheel", "Ground", 70, 125.0, true);
+        /*
+        cracker13.crackerId = 13;
+        cracker13.crackerName = "Catherine Wheel";
+        cracker13.crackerType = "Ground";
+        cracker13.duration = 70;
+        cracker13.price = 125.0;
+        cracker13.isSafe = true;
+        */
 
-Crackers cracker16 = new Crackers();
-cracker16.crackerId = 116;
-cracker16.crackerName = "Golden Flame";
-cracker16.crackerType = "Flower Pot";
-cracker16.duration = 40;
-cracker16.price = 70.0;
-cracker16.isSafe = true;
-System.out.println("Cracker 16: ");
-System.out.println("Cracker ID: " + cracker16.crackerId);
-System.out.println("Cracker Name: " + cracker16.crackerName);
-System.out.println("Cracker Type: " + cracker16.crackerType);
-System.out.println("Duration (seconds): " + cracker16.duration);
-System.out.println("Price (INR): " + cracker16.price);
-System.out.println("Is Safe: " + cracker16.isSafe);
-System.out.println();
+        Cracker cracker14 = new Cracker(14, "Silver Fountain", "Fountain", 35, 140.0, true);
+        /*
+        cracker14.crackerId = 14;
+        cracker14.crackerName = "Silver Fountain";
+        cracker14.crackerType = "Fountain";
+        cracker14.duration = 35;
+        cracker14.price = 140.0;
+        cracker14.isSafe = true;
+        */
 
-Crackers cracker17 = new Crackers();
-cracker17.crackerId = 117;
-cracker17.crackerName = "Silver Shine";
-cracker17.crackerType = "Chakri";
-cracker17.duration = 60;
-cracker17.price = 125.0;
-cracker17.isSafe = true;
-System.out.println("Cracker 17: ");
-System.out.println("Cracker ID: " + cracker17.crackerId);
-System.out.println("Cracker Name: " + cracker17.crackerName);
-System.out.println("Cracker Type: " + cracker17.crackerType);
-System.out.println("Duration (seconds): " + cracker17.duration);
-System.out.println("Price (INR): " + cracker17.price);
-System.out.println("Is Safe: " + cracker17.isSafe);
-System.out.println();
+        Cracker cracker15 = new Cracker(15, "Golden Spark", "Handheld", 65, 75.0, true);
+        /*
+        cracker15.crackerId = 15;
+        cracker15.crackerName = "Golden Spark";
+        cracker15.crackerType = "Handheld";
+        cracker15.duration = 65;
+        cracker15.price = 75.0;
+        cracker15.isSafe = true;
+        */
 
-Crackers cracker18 = new Crackers();
-cracker18.crackerId = 118;
-cracker18.crackerName = "Thunder Strike";
-cracker18.crackerType = "Anar";
-cracker18.duration = 35;
-cracker18.price = 60.0;
-cracker18.isSafe = false;
-System.out.println("Cracker 18: ");
-System.out.println("Cracker ID: " + cracker18.crackerId);
-System.out.println("Cracker Name: " + cracker18.crackerName);
-System.out.println("Cracker Type: " + cracker18.crackerType);
-System.out.println("Duration (seconds): " + cracker18.duration);
-System.out.println("Price (INR): " + cracker18.price);
-System.out.println("Is Safe: " + cracker18.isSafe);
-System.out.println();
+        Cracker cracker16 = new Cracker(16, "Firecracker Bomb", "Aerial", 25, 180.0, false);
+        /*
+        cracker16.crackerId = 16;
+        cracker16.crackerName = "Firecracker Bomb";
+        cracker16.crackerType = "Aerial";
+        cracker16.duration = 25;
+        cracker16.price = 180.0;
+        cracker16.isSafe = false;
+        */
 
-Crackers cracker19 = new Crackers();
-cracker19.crackerId = 119;
-cracker19.crackerName = "Rainbow Spin";
-cracker19.crackerType = "Phooljhadi";
-cracker19.duration = 50;
-cracker19.price = 85.0;
-cracker19.isSafe = true;
-System.out.println("Cracker 19: ");
-System.out.println("Cracker ID: " + cracker19.crackerId);
-System.out.println("Cracker Name: " + cracker19.crackerName);
-System.out.println("Cracker Type: " + cracker19.crackerType);
-System.out.println("Duration (seconds): " + cracker19.duration);
-System.out.println("Price (INR): " + cracker19.price);
-System.out.println("Is Safe: " + cracker19.isSafe);
-System.out.println();
+        Cracker cracker17 = new Cracker(17, "Magic Fountain", "Fountain", 55, 85.0, true);
+        /*
+        cracker17.crackerId = 17;
+        cracker17.crackerName = "Magic Fountain";
+        cracker17.crackerType = "Fountain";
+        cracker17.duration = 55;
+        cracker17.price = 85.0;
+        cracker17.isSafe = true;
+        */
 
-Crackers cracker20 = new Crackers();
-cracker20.crackerId = 120;
-cracker20.crackerName = "Golden Fire";
-cracker20.crackerType = "Sparkler";
-cracker20.duration = 30;
-cracker20.price = 55.0;
-cracker20.isSafe = true;
-System.out.println("Cracker 20: ");
-System.out.println("Cracker ID: " + cracker20.crackerId);
-System.out.println("Cracker Name: " + cracker20.crackerName);
-System.out.println("Cracker Type: " + cracker20.crackerType);
-System.out.println("Duration (seconds): " + cracker20.duration);
-System.out.println("Price (INR): " + cracker20.price);
-System.out.println("Is Safe: " + cracker20.isSafe);
-System.out.println();
+        Cracker cracker18 = new Cracker(18, "Big Bang", "Aerial", 20, 220.0, false);
+        /*
+        cracker18.crackerId = 18;
+        cracker18.crackerName = "Big Bang";
+        cracker18.crackerType = "Aerial";
+        cracker18.duration = 20;
+        cracker18.price = 220.0;
+        cracker18.isSafe = false;
+        */
 
-System.out.println("main started");
+        Cracker cracker19 = new Cracker(19, "Color Fountain", "Fountain", 45, 115.0, true);
+        /*
+        cracker19.crackerId = 19;
+        cracker19.crackerName = "Color Fountain";
+        cracker19.crackerType = "Fountain";
+        cracker19.duration = 45;
+        cracker19.price = 115.0;
+        cracker19.isSafe = true;
+        */
 
+        Cracker cracker20 = new Cracker(20, "Thunder Wheel", "Ground", 75, 130.0, true);
+        /*
+        cracker20.crackerId = 20;
+        cracker20.crackerName = "Thunder Wheel";
+        cracker20.crackerType = "Ground";
+        cracker20.duration = 75;
+        cracker20.price = 130.0;
+        cracker20.isSafe = true;
+        */
 
+        cracker1.printCrackerInfo();
+        cracker2.printCrackerInfo();
+        cracker3.printCrackerInfo();
+        cracker4.printCrackerInfo();
+        cracker5.printCrackerInfo();
+        cracker6.printCrackerInfo();
+        cracker7.printCrackerInfo();
+        cracker8.printCrackerInfo();
+        cracker9.printCrackerInfo();
+        cracker10.printCrackerInfo();
+        cracker11.printCrackerInfo();
+        cracker12.printCrackerInfo();
+        cracker13.printCrackerInfo();
+        cracker14.printCrackerInfo();
+        cracker15.printCrackerInfo();
+        cracker16.printCrackerInfo();
+        cracker17.printCrackerInfo();
+        cracker18.printCrackerInfo();
+        cracker19.printCrackerInfo();
+        cracker20.printCrackerInfo();
 
-}
+        System.out.println("Main ended");
+    }
 }

@@ -1,400 +1,251 @@
-class MarbleRunner{
-public sttaic void main(String[] king){
+class MarbleRunner {
+    public static void main(String[] args) {
 
-System.out.println("main started");
+        System.out.println("Main started");
 
-Marble marble1 = new Marble();
-marble1.marbleId = 201;
-marble1.name = "Carrara White";
-marble1.origin = "Italy";
-marble1.color = "White";
-marble1.hardness = 3.0;
-marble1.pricePerSqFt = 15.5;
-marble1.isPolished = true;
-marble1.texture = "Fine Grain";
-System.out.println("Marble 1:");
-System.out.println("Marble ID: " + marble1.marbleId);
-System.out.println("Name: " + marble1.name);
-System.out.println("Origin: " + marble1.origin);
-System.out.println("Color: " + marble1.color);
-System.out.println("Hardness: " + marble1.hardness);
-System.out.println("Price Per SqFt: $" + marble1.pricePerSqFt);
-System.out.println("Is Polished: " + marble1.isPolished);
-System.out.println("Texture: " + marble1.texture);
-System.out.println();
+        Marble m1 = new Marble(1, "Red", "Small", "Glass", true, 12.5);
+        /*
+        m1.marbleId = 1;
+        m1.color = "Red";
+        m1.size = "Small";
+        m1.material = "Glass";
+        m1.isShiny = true;
+        m1.weight = 12.5;
+        */
+        m1.getInfo();
 
-Marble marble2 = new Marble();
-marble2.marbleId = 202;
-marble2.name = "Calacatta Gold";
-marble2.origin = "Italy";
-marble2.color = "White with Gold Veins";
-marble2.hardness = 3.5;
-marble2.pricePerSqFt = 18.0;
-marble2.isPolished = true;
-marble2.texture = "Coarse Grain";
-System.out.println("Marble 2:");
-System.out.println("Marble ID: " + marble2.marbleId);
-System.out.println("Name: " + marble2.name);
-System.out.println("Origin: " + marble2.origin);
-System.out.println("Color: " + marble2.color);
-System.out.println("Hardness: " + marble2.hardness);
-System.out.println("Price Per SqFt: $" + marble2.pricePerSqFt);
-System.out.println("Is Polished: " + marble2.isPolished);
-System.out.println("Texture: " + marble2.texture);
-System.out.println();
+        Marble m2 = new Marble(2, "Blue", "Medium", "Stone", false, 20.0);
+        /*
+        m2.marbleId = 2;
+        m2.color = "Blue";
+        m2.size = "Medium";
+        m2.material = "Stone";
+        m2.isShiny = false;
+        m2.weight = 20.0;
+        */
+        m2.getInfo();
 
-Marble marble3 = new Marble();
-marble3.marbleId = 203;
-marble3.name = "Crema Marfil";
-marble3.origin = "Spain";
-marble3.color = "Beige";
-marble3.hardness = 3.2;
-marble3.pricePerSqFt = 14.0;
-marble3.isPolished = false;
-marble3.texture = "Medium Grain";
-System.out.println("Marble 3:");
-System.out.println("Marble ID: " + marble3.marbleId);
-System.out.println("Name: " + marble3.name);
-System.out.println("Origin: " + marble3.origin);
-System.out.println("Color: " + marble3.color);
-System.out.println("Hardness: " + marble3.hardness);
-System.out.println("Price Per SqFt: $" + marble3.pricePerSqFt);
-System.out.println("Is Polished: " + marble3.isPolished);
-System.out.println("Texture: " + marble3.texture);
-System.out.println();
+        Marble m3 = new Marble(3, "Green", "Large", "Glass", true, 25.3);
+        /*
+        m3.marbleId = 3;
+        m3.color = "Green";
+        m3.size = "Large";
+        m3.material = "Glass";
+        m3.isShiny = true;
+        m3.weight = 25.3;
+        */
+        m3.getInfo();
 
-Marble marble4 = new Marble();
-marble4.marbleId = 204;
-marble4.name = "Emperador Dark";
-marble4.origin = "Spain";
-marble4.color = "Dark Brown";
-marble4.hardness = 3.1;
-marble4.pricePerSqFt = 13.5;
-marble4.isPolished = true;
-marble4.texture = "Fine Grain";
-System.out.println("Marble 4:");
-System.out.println("Marble ID: " + marble4.marbleId);
-System.out.println("Name: " + marble4.name);
-System.out.println("Origin: " + marble4.origin);
-System.out.println("Color: " + marble4.color);
-System.out.println("Hardness: " + marble4.hardness);
-System.out.println("Price Per SqFt: $" + marble4.pricePerSqFt);
-System.out.println("Is Polished: " + marble4.isPolished);
-System.out.println("Texture: " + marble4.texture);
-System.out.println();
+        Marble m4 = new Marble(4, "Yellow", "Small", "Plastic", false, 10.0);
+        /*
+        m4.marbleId = 4;
+        m4.color = "Yellow";
+        m4.size = "Small";
+        m4.material = "Plastic";
+        m4.isShiny = false;
+        m4.weight = 10.0;
+        */
+        m4.getInfo();
 
-Marble marble5 = new Marble();
-marble5.marbleId = 205;
-marble5.name = "Black Marquina";
-marble5.origin = "Spain";
-marble5.color = "Black";
-marble5.hardness = 3.3;
-marble5.pricePerSqFt = 16.0;
-marble5.isPolished = true;
-marble5.texture = "Coarse Grain";
-System.out.println("Marble 5:");
-System.out.println("Marble ID: " + marble5.marbleId);
-System.out.println("Name: " + marble5.name);
-System.out.println("Origin: " + marble5.origin);
-System.out.println("Color: " + marble5.color);
-System.out.println("Hardness: " + marble5.hardness);
-System.out.println("Price Per SqFt: $" + marble5.pricePerSqFt);
-System.out.println("Is Polished: " + marble5.isPolished);
-System.out.println("Texture: " + marble5.texture);
-System.out.println();
+        Marble m5 = new Marble(5, "White", "Medium", "Ceramic", true, 18.9);
+        /*
+        m5.marbleId = 5;
+        m5.color = "White";
+        m5.size = "Medium";
+        m5.material = "Ceramic";
+        m5.isShiny = true;
+        m5.weight = 18.9;
+        */
+        m5.getInfo();
 
-Marble marble6 = new Marble();
-marble6.marbleId = 206;
-marble6.name = "Thassos White";
-marble6.origin = "Greece";
-marble6.color = "Pure White";
-marble6.hardness = 3.0;
-marble6.pricePerSqFt = 17.0;
-marble6.isPolished = true;
-marble6.texture = "Fine Grain";
-System.out.println("Marble 6:");
-System.out.println("Marble ID: " + marble6.marbleId);
-System.out.println("Name: " + marble6.name);
-System.out.println("Origin: " + marble6.origin);
-System.out.println("Color: " + marble6.color);
-System.out.println("Hardness: " + marble6.hardness);
-System.out.println("Price Per SqFt: $" + marble6.pricePerSqFt);
-System.out.println("Is Polished: " + marble6.isPolished);
-System.out.println("Texture: " + marble6.texture);
-System.out.println();
+        Marble m6 = new Marble(6, "Black", "Large", "Stone", false, 27.1);
+        /*
+        m6.marbleId = 6;
+        m6.color = "Black";
+        m6.size = "Large";
+        m6.material = "Stone";
+        m6.isShiny = false;
+        m6.weight = 27.1;
+        */
+        m6.getInfo();
 
-Marble marble7 = new Marble();
-marble7.marbleId = 207;
-marble7.name = "Volakas";
-marble7.origin = "Greece";
-marble7.color = "White with Gray Veins";
-marble7.hardness = 3.2;
-marble7.pricePerSqFt = 15.0;
-marble7.isPolished = false;
-marble7.texture = "Medium Grain";
-System.out.println("Marble 7:");
-System.out.println("Marble ID: " + marble7.marbleId);
-System.out.println("Name: " + marble7.name);
-System.out.println("Origin: " + marble7.origin);
-System.out.println("Color: " + marble7.color);
-System.out.println("Hardness: " + marble7.hardness);
-System.out.println("Price Per SqFt: $" + marble7.pricePerSqFt);
-System.out.println("Is Polished: " + marble7.isPolished);
-System.out.println("Texture: " + marble7.texture);
-System.out.println();
+        Marble m7 = new Marble(7, "Pink", "Small", "Glass", true, 11.5);
+        /*
+        m7.marbleId = 7;
+        m7.color = "Pink";
+        m7.size = "Small";
+        m7.material = "Glass";
+        m7.isShiny = true;
+        m7.weight = 11.5;
+        */
+        m7.getInfo();
 
-Marble marble8 = new Marble();
-marble8.marbleId = 208;
-marble8.name = "Rainforest Brown";
-marble8.origin = "India";
-marble8.color = "Brown with Green Veins";
-marble8.hardness = 3.1;
-marble8.pricePerSqFt = 14.5;
-marble8.isPolished = true;
-marble8.texture = "Coarse Grain";
-System.out.println("Marble 8:");
-System.out.println("Marble ID: " + marble8.marbleId);
-System.out.println("Name: " + marble8.name);
-System.out.println("Origin: " + marble8.origin);
-System.out.println("Color: " + marble8.color);
-System.out.println("Hardness: " + marble8.hardness);
-System.out.println("Price Per SqFt: $" + marble8.pricePerSqFt);
-System.out.println("Is Polished: " + marble8.isPolished);
-System.out.println("Texture: " + marble8.texture);
-System.out.println();
+        Marble m8 = new Marble(8, "Orange", "Medium", "Plastic", false, 19.7);
+        /*
+        m8.marbleId = 8;
+        m8.color = "Orange";
+        m8.size = "Medium";
+        m8.material = "Plastic";
+        m8.isShiny = false;
+        m8.weight = 19.7;
+        */
+        m8.getInfo();
 
-Marble marble9 = new Marble();
-marble9.marbleId = 209;
-marble9.name = "Panda White";
-marble9.origin = "India";
-marble9.color = "White with Black Veins";
-marble9.hardness = 3.4;
-marble9.pricePerSqFt = 16.5;
-marble9.isPolished = true;
-marble9.texture = "Fine Grain";
-System.out.println("Marble 9:");
-System.out.println("Marble ID: " + marble9.marbleId);
-System.out.println("Name: " + marble9.name);
-System.out.println("Origin: " + marble9.origin);
-System.out.println("Color: " + marble9.color);
-System.out.println("Hardness: " + marble9.hardness);
-System.out.println("Price Per SqFt: $" + marble9.pricePerSqFt);
-System.out.println("Is Polished: " + marble9.isPolished);
-System.out.println("Texture: " + marble9.texture);
-System.out.println();
+        Marble m9 = new Marble(9, "Purple", "Large", "Ceramic", true, 24.4);
+        /*
+        m9.marbleId = 9;
+        m9.color = "Purple";
+        m9.size = "Large";
+        m9.material = "Ceramic";
+        m9.isShiny = true;
+        m9.weight = 24.4;
+        */
+        m9.getInfo();
 
-Marble marble10 = new Marble();
-marble10.marbleId = 210;
-marble10.name = "Crema Valencia";
-marble10.origin = "Spain";
-marble10.color = "Cream";
-marble10.hardness = 3.0;
-marble10.pricePerSqFt = 13.0;
-marble10.isPolished = false;
-marble10.texture = "Medium Grain";
-System.out.println("Marble 10:");
-System.out.println("Marble ID: " + marble10.marbleId);
-System.out.println("Name: " + marble10.name);
-System.out.println("Origin: " + marble10.origin);
-System.out.println("Color: " + marble10.color);
-System.out.println("Hardness: " + marble10.hardness);
-System.out.println("Price Per SqFt: $" + marble10.pricePerSqFt);
-System.out.println("Is Polished: " + marble10.isPolished);
-System.out.println("Texture: " + marble10.texture);
-System.out.println();
+        Marble m10 = new Marble(10, "Gray", "Small", "Stone", false, 13.6);
+        /*
+        m10.marbleId = 10;
+        m10.color = "Gray";
+        m10.size = "Small";
+        m10.material = "Stone";
+        m10.isShiny = false;
+        m10.weight = 13.6;
+        */
+        m10.getInfo();
 
-Marble marble11 = new Marble();
-marble11.marbleId = 211;
-marble11.name = "Fantasy Brown";
-marble11.origin = "India";
-marble11.color = "Brown";
-marble11.hardness = 3.2;
-marble11.pricePerSqFt = 15.5;
-marble11.isPolished = true;
-marble11.texture = "Coarse Grain";
-System.out.println("Marble 11:");
-System.out.println("Marble ID: " + marble11.marbleId);
-System.out.println("Name: " + marble11.name);
-System.out.println("Origin: " + marble11.origin);
-System.out.println("Color: " + marble11.color);
-System.out.println("Hardness: " + marble11.hardness);
-System.out.println("Price Per SqFt: $" + marble11.pricePerSqFt);
-System.out.println("Is Polished: " + marble11.isPolished);
-System.out.println("Texture: " + marble11.texture);
-System.out.println();
+        Marble m11 = new Marble(11, "Cyan", "Medium", "Glass", true, 22.3);
+        /*
+        m11.marbleId = 11;
+        m11.color = "Cyan";
+        m11.size = "Medium";
+        m11.material = "Glass";
+        m11.isShiny = true;
+        m11.weight = 22.3;
+        */
+        m11.getInfo();
 
-Marble marble12 = new Marble();
-marble12.marbleId = 212;
-marble12.name = "Dark Emperador";
-marble12.origin = "Spain";
-marble12.color = "Dark Brown";
-marble12.hardness = 3.1;
-marble12.pricePerSqFt = 14.0;
-marble12.isPolished = false;
-marble12.texture = "Fine Grain";
-System.out.println("Marble 12:");
-System.out.println("Marble ID: " + marble12.marbleId);
-System.out.println("Name: " + marble12.name);
-System.out.println("Origin: " + marble12.origin);
-System.out.println("Color: " + marble12.color);
-System.out.println("Hardness: " + marble12.hardness);
-System.out.println("Price Per SqFt: $" + marble12.pricePerSqFt);
-System.out.println("Is Polished: " + marble12.isPolished);
-System.out.println("Texture: " + marble12.texture);
-System.out.println();
+        Marble m12 = new Marble(12, "Magenta", "Large", "Plastic", false, 26.2);
+        /*
+        m12.marbleId = 12;
+        m12.color = "Magenta";
+        m12.size = "Large";
+        m12.material = "Plastic";
+        m12.isShiny = false;
+        m12.weight = 26.2;
+        */
+        m12.getInfo();
 
-Marble marble13 = new Marble();
-marble13.marbleId = 213;
-marble13.name = "Volakas White";
-marble13.origin = "Greece";
-marble13.color = "White with Gray Veins";
-marble13.hardness = 3.3;
-marble13.pricePerSqFt = 16.2;
-marble13.isPolished = true;
-marble13.texture = "Medium Grain";
-System.out.println("Marble 13:");
-System.out.println("Marble ID: " + marble13.marbleId);
-System.out.println("Name: " + marble13.name);
-System.out.println("Origin: " + marble13.origin);
-System.out.println("Color: " + marble13.color);
-System.out.println("Hardness: " + marble13.hardness);
-System.out.println("Price Per SqFt: $" + marble13.pricePerSqFt);
-System.out.println("Is Polished: " + marble13.isPolished);
-System.out.println("Texture: " + marble13.texture);
-System.out.println();
+        Marble m13 = new Marble(13, "Teal", "Small", "Ceramic", true, 14.0);
+        /*
+        m13.marbleId = 13;
+        m13.color = "Teal";
+        m13.size = "Small";
+        m13.material = "Ceramic";
+        m13.isShiny = true;
+        m13.weight = 14.0;
+        */
+        m13.getInfo();
 
-Marble marble14 = new Marble();
-marble14.marbleId = 214;
-marble14.name = "Venato White";
-marble14.origin = "Italy";
-marble14.color = "White with Gray Veins";
-marble14.hardness = 3.4;
-marble14.pricePerSqFt = 17.5;
-marble14.isPolished = true;
-marble14.texture = "Fine Grain";
-System.out.println("Marble 14:");
-System.out.println("Marble ID: " + marble14.marbleId);
-System.out.println("Name: " + marble14.name);
-System.out.println("Origin: " + marble14.origin);
-System.out.println("Color: " + marble14.color);
-System.out.println("Hardness: " + marble14.hardness);
-System.out.println("Price Per SqFt: $" + marble14.pricePerSqFt);
-System.out.println("Is Polished: " + marble14.isPolished);
-System.out.println("Texture: " + marble14.texture);
-System.out.println();
+        Marble m14 = new Marble(14, "Brown", "Medium", "Stone", false, 21.5);
+        /*
+        m14.marbleId = 14;
+        m14.color = "Brown";
+        m14.size = "Medium";
+        m14.material = "Stone";
+        m14.isShiny = false;
+        m14.weight = 21.5;
+        */
+        m14.getInfo();
 
-Marble marble15 = new Marble();
-marble15.marbleId = 215;
-marble15.name = "Statuario";
-marble15.origin = "Italy";
-marble15.color = "White with Gray Veins";
-marble15.hardness = 3.5;
-marble15.pricePerSqFt = 18.0;
-marble15.isPolished = true;
-marble15.texture = "Fine Grain";
-System.out.println("Marble 15:");
-System.out.println("Marble ID: " + marble15.marbleId);
-System.out.println("Name: " + marble15.name);
-System.out.println("Origin: " + marble15.origin);
-System.out.println("Color: " + marble15.color);
-System.out.println("Hardness: " + marble15.hardness);
-System.out.println("Price Per SqFt: $" + marble15.pricePerSqFt);
-System.out.println("Is Polished: " + marble15.isPolished);
-System.out.println("Texture: " + marble15.texture);
-System.out.println();
+        Marble m15 = new Marble(15, "Gold", "Large", "Glass", true, 29.8);
+        /*
+        m15.marbleId = 15;
+        m15.color = "Gold";
+        m15.size = "Large";
+        m15.material = "Glass";
+        m15.isShiny = true;
+        m15.weight = 29.8;
+        */
+        m15.getInfo();
 
-Marble marble16 = new Marble();
-marble16.marbleId = 216;
-marble16.name = "White Macaubas";
-marble16.origin = "Brazil";
-marble16.color = "White with Green Veins";
-marble16.hardness = 3.2;
-marble16.pricePerSqFt = 16.7;
-marble16.isPolished = true;
-marble16.texture = "Coarse Grain";
-System.out.println("Marble 16:");
-System.out.println("Marble ID: " + marble16.marbleId);
-System.out.println("Name: " + marble16.name);
-System.out.println("Origin: " + marble16.origin);
-System.out.println("Color: " + marble16.color);
-System.out.println("Hardness: " + marble16.hardness);
-System.out.println("Price Per SqFt: $" + marble16.pricePerSqFt);
-System.out.println("Is Polished: " + marble16.isPolished);
-System.out.println("Texture: " + marble16.texture);
-System.out.println();
+        Marble m16 = new Marble(16, "Silver", "Small", "Plastic", false, 12.0);
+        /*
+        m16.marbleId = 16;
+        m16.color = "Silver";
+        m16.size = "Small";
+        m16.material = "Plastic";
+        m16.isShiny = false;
+        m16.weight = 12.0;
+        */
+        m16.getInfo();
 
-Marble marble17 = new Marble();
-marble17.marbleId = 217;
-marble17.name = "Rainforest Green";
-marble17.origin = "India";
-marble17.color = "Dark Green with Brown Veins";
-marble17.hardness = 3.1;
-marble17.pricePerSqFt = 14.8;
-marble17.isPolished = false;
-marble17.texture = "Medium Grain";
-System.out.println("Marble 17:");
-System.out.println("Marble ID: " + marble17.marbleId);
-System.out.println("Name: " + marble17.name);
-System.out.println("Origin: " + marble17.origin);
-System.out.println("Color: " + marble17.color);
-System.out.println("Hardness: " + marble17.hardness);
-System.out.println("Price Per SqFt: $" + marble17.pricePerSqFt);
-System.out.println("Is Polished: " + marble17.isPolished);
-System.out.println("Texture: " + marble17.texture);
-System.out.println();
+        Marble m17 = new Marble(17, "Lavender", "Medium", "Ceramic", true, 17.9);
+        /*
+        m17.marbleId = 17;
+        m17.color = "Lavender";
+        m17.size = "Medium";
+        m17.material = "Ceramic";
+        m17.isShiny = true;
+        m17.weight = 17.9;
+        */
+        m17.getInfo();
 
+        Marble m18 = new Marble(18, "Maroon", "Large", "Stone", false, 30.0);
+        /*
+        m18.marbleId = 18;
+        m18.color = "Maroon";
+        m18.size = "Large";
+        m18.material = "Stone";
+        m18.isShiny = false;
+        m18.weight = 30.0;
+        */
+        m18.getInfo();
 
-Marble marble18 = new Marble();
-marble18.color = "Teal";
-marble18.origin = "Indonesia";
-marble18.hardness = 6.9;
-marble18.pricePerSqFt = 55.0;
-marble18.isPolished = true;
-marble18.texture = "Glossy";
+        Marble m19 = new Marble(19, "Navy", "Small", "Glass", true, 15.6);
+        /*
+        m19.marbleId = 19;
+        m19.color = "Navy";
+        m19.size = "Small";
+        m19.material = "Glass";
+        m19.isShiny = true;
+        m19.weight = 15.6;
+        */
+        m19.getInfo();
 
-System.out.println("Color: " + marble18.color);
-System.out.println("Origin: " + marble18.origin);
-System.out.println("Hardness: " + marble18.hardness);
-System.out.println("Price Per SqFt: $" + marble18.pricePerSqFt);
-System.out.println("Is Polished: " + marble18.isPolished);
-System.out.println("Texture: " + marble18.texture);
-System.out.println();
+        Marble m20 = new Marble(20, "Lime", "Medium", "Plastic", false, 20.2);
+        /*
+        m20.marbleId = 20;
+        m20.color = "Lime";
+        m20.size = "Medium";
+        m20.material = "Plastic";
+        m20.isShiny = false;
+        m20.weight = 20.2;
+        */
+        m20.getInfo();
 
-Marble marble19 = new Marble();
-marble19.color = "Copper";
-marble19.origin = "Chile";
-marble19.hardness = 5.8;
-marble19.pricePerSqFt = 38.5;
-marble19.isPolished = false;
-marble19.texture = "Crystalline";
+        // Calling getInfo again for all objects from m1 to m20
+        System.out.println("Calling all getInfo from m1 to m20");
+        m1.getInfo();
+        m2.getInfo();
+        m3.getInfo();
+        m4.getInfo();
+        m5.getInfo();
+        m6.getInfo();
+        m7.getInfo();
+        m8.getInfo();
+        m9.getInfo();
+        m10.getInfo();
+        m11.getInfo();
+        m12.getInfo();
+        m13.getInfo();
+        m14.getInfo();
+        m15.getInfo();
+        m16.getInfo();
+        m17.getInfo();
+        m18.getInfo();
+        m19.getInfo();
+        m20.getInfo();
 
-System.out.println("Color: " + marble19.color);
-System.out.println("Origin: " + marble19.origin);
-System.out.println("Hardness: " + marble19.hardness);
-System.out.println("Price Per SqFt: $" + marble19.pricePerSqFt);
-System.out.println("Is Polished: " + marble19.isPolished);
-System.out.println("Texture: " + marble19.texture);
-System.out.println();
-
-Marble marble20 = new Marble();
-marble20.color = "Mint";
-marble20.origin = "Pakistan";
-marble20.hardness = 7.1;
-marble20.pricePerSqFt = 48.9;
-marble20.isPolished = true;
-marble20.texture = "Smooth";
-
-System.out.println("Color: " + marble20.color);
-System.out.println("Origin: " + marble20.origin);
-System.out.println("Hardness: " + marble20.hardness);
-System.out.println("Price Per SqFt: $" + marble20.pricePerSqFt);
-System.out.println("Is Polished: " + marble20.isPolished);
-System.out.println("Texture: " + marble20.texture);
-System.out.println();
-
-
-System.out.println("main ended");
-
-
-}
+        System.out.println("Main ended");
+    }
 }

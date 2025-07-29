@@ -1,308 +1,223 @@
  class KarateRunner {
+
     public static void main(String[] args) {
-        Karate k1 = new Karate();
-        k1.beltRank = 1; 
-		k1.style = "Shotokan"; 
-		k1.yearsOfPractice = 1; 
-		k1.hasBlackBelt = false;
-		k1.instructorName = "Sensei Lee"; 
-		k1.trainingHoursPerWeek = 5.5;
-        System.out.println("Karate 1:");
-        System.out.println("Belt Rank: " + k1.beltRank);
-        System.out.println("Style: " + k1.style);
-        System.out.println("Years of Practice: " + k1.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k1.hasBlackBelt);
-        System.out.println("Instructor Name: " + k1.instructorName);
-        System.out.println("Training Hours per Week: " + k1.trainingHoursPerWeek);
-        System.out.println();
 
-        Karate k2 = new Karate();
-        k2.beltRank = 3; 
-		k2.style = "Goju-ryu"; 
-		k2.yearsOfPractice = 4; 
-		k2.hasBlackBelt = false; 
-		k2.instructorName = "Sensei Tanaka"; 
-		k2.trainingHoursPerWeek = 8.0;
-        System.out.println("Karate 2:");
-        System.out.println("Belt Rank: " + k2.beltRank);
-        System.out.println("Style: " + k2.style);
-        System.out.println("Years of Practice: " + k2.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k2.hasBlackBelt);
-        System.out.println("Instructor Name: " + k2.instructorName);
-        System.out.println("Training Hours per Week: " + k2.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate1 = new Karate(1, "Shotokan", 3, true, "Sensei Ken", 5.5);
+           karate1.getInfo() ; /*
+        karate1.beltRank = 1;
+        karate1.style = "Shotokan";
+        karate1.yearsOfPractice = 3;
+        karate1.hasBlackBelt = true;
+        karate1.instructorName = "Sensei Ken";
+        karate1.trainingHoursPerWeek = 5.5;
+        */
 
-        Karate k3 = new Karate();
-        k3.beltRank = 5; 
-		k3.style = "Wado-ryu"; 
-		k3.yearsOfPractice = 7; 
-		k3.hasBlackBelt = true; 
-		k3.instructorName = "Sensei Nakamura";
-		k3.trainingHoursPerWeek = 10.0;
-        System.out.println("Karate 3:");
-        System.out.println("Belt Rank: " + k3.beltRank);
-        System.out.println("Style: " + k3.style);
-        System.out.println("Years of Practice: " + k3.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k3.hasBlackBelt);
-        System.out.println("Instructor Name: " + k3.instructorName);
-        System.out.println("Training Hours per Week: " + k3.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate2 = new Karate(2, "Goju-Ryu", 2, false, "Master Sato", 4.0);
+          karate2.getInfo() ;  /*
+        karate2.beltRank = 2;
+        karate2.style = "Goju-Ryu";
+        karate2.yearsOfPractice = 2;
+        karate2.hasBlackBelt = false;
+        karate2.instructorName = "Master Sato";
+        karate2.trainingHoursPerWeek = 4.0;
+        */
 
-        Karate k4 = new Karate();
-        k4.beltRank = 2; 
-		k4.style = "Shotokan"; 
-		k4.yearsOfPractice = 3; 
-		k4.hasBlackBelt = false; 
-		k4.instructorName = "Sensei Kim"; 
-		k4.trainingHoursPerWeek = 6.0;
-        System.out.println("Karate 4:");
-        System.out.println("Belt Rank: " + k4.beltRank);
-        System.out.println("Style: " + k4.style);
-        System.out.println("Years of Practice: " + k4.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k4.hasBlackBelt);
-        System.out.println("Instructor Name: " + k4.instructorName);
-        System.out.println("Training Hours per Week: " + k4.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate3 = new Karate(3, "Wado-Ryu", 4, true, "Shihan Mori", 6.0);
+          karate3.getInfo();  /*
+        karate3.beltRank = 3;
+        karate3.style = "Wado-Ryu";
+        karate3.yearsOfPractice = 4;
+        karate3.hasBlackBelt = true;
+        karate3.instructorName = "Shihan Mori";
+        karate3.trainingHoursPerWeek = 6.0;
+        */
 
-        Karate k5 = new Karate();
-        k5.beltRank = 6; 
-		k5.style = "Kyokushin"; 
-		k5.yearsOfPractice = 10;
-		k5.hasBlackBelt = true; 
-		k5.instructorName = "Sensei Watanabe"; 
-		k5.trainingHoursPerWeek = 12.5;
-        System.out.println("Karate 5:");
-        System.out.println("Belt Rank: " + k5.beltRank);
-        System.out.println("Style: " + k5.style);
-        System.out.println("Years of Practice: " + k5.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k5.hasBlackBelt);
-        System.out.println("Instructor Name: " + k5.instructorName);
-        System.out.println("Training Hours per Week: " + k5.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate4 = new Karate(4, "Shito-Ryu", 1, false, "Instructor Tanaka", 3.5);
+          karate4.getInfo() ; /*
+        karate4.beltRank = 4;
+        karate4.style = "Shito-Ryu";
+        karate4.yearsOfPractice = 1;
+        karate4.hasBlackBelt = false;
+        karate4.instructorName = "Instructor Tanaka";
+        karate4.trainingHoursPerWeek = 3.5;
+        */
 
-        Karate k6 = new Karate();
-        k6.beltRank = 4;
-		k6.style = "Goju-ryu"; 
-		k6.yearsOfPractice = 6;
-		k6.hasBlackBelt = true; 
-		k6.instructorName = "Sensei Honda";
-		k6.trainingHoursPerWeek = 9.0;
-        System.out.println("Karate 6:");
-        System.out.println("Belt Rank: " + k6.beltRank);
-        System.out.println("Style: " + k6.style);
-        System.out.println("Years of Practice: " + k6.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k6.hasBlackBelt);
-        System.out.println("Instructor Name: " + k6.instructorName);
-        System.out.println("Training Hours per Week: " + k6.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate5 = new Karate(5, "Kyokushin", 5, true, "Sensei Lee", 7.0);
+		   karate5.getInfo() ;
+        /*
+        karate5.beltRank = 5;
+        karate5.style = "Kyokushin";
+        karate5.yearsOfPractice = 5;
+        karate5.hasBlackBelt = true;
+        karate5.instructorName = "Sensei Lee";
+        karate5.trainingHoursPerWeek = 7.0;
+        */
 
-        Karate k7 = new Karate();
-        k7.beltRank = 1; 
-		k7.style = "Shotokan";
-		k7.yearsOfPractice = 1; 
-		k7.hasBlackBelt = false;
-		k7.instructorName = "Sensei Lee";
-		k7.trainingHoursPerWeek = 4.5;
-        System.out.println("Karate 7:");
-        System.out.println("Belt Rank: " + k7.beltRank);
-        System.out.println("Style: " + k7.style);
-        System.out.println("Years of Practice: " + k7.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k7.hasBlackBelt);
-        System.out.println("Instructor Name: " + k7.instructorName);
-        System.out.println("Training Hours per Week: " + k7.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate6 = new Karate(6, "Uechi-Ryu", 3, true, "Master Chen", 5.0);
+		   karate6.getInfo() ;
+        /*
+        karate6.beltRank = 6;
+        karate6.style = "Uechi-Ryu";
+        karate6.yearsOfPractice = 3;
+        karate6.hasBlackBelt = true;
+        karate6.instructorName = "Master Chen";
+        karate6.trainingHoursPerWeek = 5.0;
+        */
 
-        Karate k8 = new Karate();
-        k8.beltRank = 2; 
-		k8.style = "Wado-ryu"; 
-		k8.yearsOfPractice = 3;
-		k8.hasBlackBelt = false; 
-		k8.instructorName = "Sensei Nakamura";
-		k8.trainingHoursPerWeek = 7.0;
-        System.out.println("Karate 8:");
-        System.out.println("Belt Rank: " + k8.beltRank);
-        System.out.println("Style: " + k8.style);
-        System.out.println("Years of Practice: " + k8.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k8.hasBlackBelt);
-        System.out.println("Instructor Name: " + k8.instructorName);
-        System.out.println("Training Hours per Week: " + k8.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate7 = new Karate(7, "Chito-Ryu", 2, false, "Instructor Park", 4.5);
+		   karate7.getInfo() ;
+        /*
+        karate7.beltRank = 7;
+        karate7.style = "Chito-Ryu";
+        karate7.yearsOfPractice = 2;
+        karate7.hasBlackBelt = false;
+        karate7.instructorName = "Instructor Park";
+        karate7.trainingHoursPerWeek = 4.5;
+        */
 
-        Karate k9 = new Karate();
-        k9.beltRank = 5;
-		k9.style = "Kyokushin";
-		k9.yearsOfPractice = 9;
-		k9.hasBlackBelt = true;
-		k9.instructorName = "Sensei Watanabe";
-		k9.trainingHoursPerWeek = 11.0;
-        System.out.println("Karate 9:");
-        System.out.println("Belt Rank: " + k9.beltRank);
-        System.out.println("Style: " + k9.style);
-        System.out.println("Years of Practice: " + k9.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k9.hasBlackBelt);
-        System.out.println("Instructor Name: " + k9.instructorName);
-        System.out.println("Training Hours per Week: " + k9.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate8 = new Karate(8, "Shorin-Ryu", 6, true, "Shihan Yamada", 8.0);
+		   karate8.getInfo() ;
+        /*
+        karate8.beltRank = 8;
+        karate8.style = "Shorin-Ryu";
+        karate8.yearsOfPractice = 6;
+        karate8.hasBlackBelt = true;
+        karate8.instructorName = "Shihan Yamada";
+        karate8.trainingHoursPerWeek = 8.0;
+        */
 
-        Karate k10 = new Karate();
-        k10.beltRank = 3; k10.style = "Goju-ryu"; k10.yearsOfPractice = 5; k10.hasBlackBelt = false; k10.instructorName = "Sensei Tanaka"; k10.trainingHoursPerWeek = 7.5;
-        System.out.println("Karate 10:");
-        System.out.println("Belt Rank: " + k10.beltRank);
-        System.out.println("Style: " + k10.style);
-        System.out.println("Years of Practice: " + k10.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k10.hasBlackBelt);
-        System.out.println("Instructor Name: " + k10.instructorName);
-        System.out.println("Training Hours per Week: " + k10.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate9 = new Karate(9, "Isshin-Ryu", 1, false, "Sensei Patel", 2.5);
+		   karate9.getInfo() ;
+        /*
+        karate9.beltRank = 9;
+        karate9.style = "Isshin-Ryu";
+        karate9.yearsOfPractice = 1;
+        karate9.hasBlackBelt = false;
+        karate9.instructorName = "Sensei Patel";
+        karate9.trainingHoursPerWeek = 2.5;
+        */
 
-        Karate k11 = new Karate();
-        k11.beltRank = 6; 
-		k11.style = "Shotokan"; 
-		k11.yearsOfPractice = 12;
-		k11.hasBlackBelt = true;
-		k11.instructorName = "Sensei Lee"; 
-		k11.trainingHoursPerWeek = 13.0;
-        System.out.println("Karate 11:");
-        System.out.println("Belt Rank: " + k11.beltRank);
-        System.out.println("Style: " + k11.style);
-        System.out.println("Years of Practice: " + k11.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k11.hasBlackBelt);
-        System.out.println("Instructor Name: " + k11.instructorName);
-        System.out.println("Training Hours per Week: " + k11.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate10 = new Karate(10, "Ashihara", 7, true, "Master Tan", 9.0);
+		   karate10.getInfo() ;
+        /*
+        karate10.beltRank = 10;
+        karate10.style = "Ashihara";
+        karate10.yearsOfPractice = 7;
+        karate10.hasBlackBelt = true;
+        karate10.instructorName = "Master Tan";
+        karate10.trainingHoursPerWeek = 9.0;
+        */
 
-        Karate k12 = new Karate();
-        k12.beltRank = 2; 
-		k12.style = "Wado-ryu"; 
-		k12.yearsOfPractice = 3; 
-		k12.hasBlackBelt = false;
-		k12.instructorName = "Sensei Nakamura";
-		k12.trainingHoursPerWeek = 6.5;
-        System.out.println("Karate 12:");
-        System.out.println("Belt Rank: " + k12.beltRank);
-        System.out.println("Style: " + k12.style);
-        System.out.println("Years of Practice: " + k12.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k12.hasBlackBelt);
-        System.out.println("Instructor Name: " + k12.instructorName);
-        System.out.println("Training Hours per Week: " + k12.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate11 = new Karate(11, "Enshin", 3, false, "Sensei Ryu", 5.2);
+		   karate11.getInfo() ;
+        /*
+        karate11.beltRank = 11;
+        karate11.style = "Enshin";
+        karate11.yearsOfPractice = 3;
+        karate11.hasBlackBelt = false;
+        karate11.instructorName = "Sensei Ryu";
+        karate11.trainingHoursPerWeek = 5.2;
+        */
 
-        Karate k13 = new Karate();
-        k13.beltRank = 4; k13.style = "Goju-ryu"; k13.yearsOfPractice = 8; k13.hasBlackBelt = true; k13.instructorName = "Sensei Honda"; k13.trainingHoursPerWeek = 10.5;
-        System.out.println("Karate 13:");
-        System.out.println("Belt Rank: " + k13.beltRank);
-        System.out.println("Style: " + k13.style);
-        System.out.println("Years of Practice: " + k13.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k13.hasBlackBelt);
-        System.out.println("Instructor Name: " + k13.instructorName);
-        System.out.println("Training Hours per Week: " + k13.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate12 = new Karate(12, "Kudo", 2, false, "Instructor Babu", 3.3);
+		    karate12.getInfo() ;
+        /*
+        karate12.beltRank = 12;
+        karate12.style = "Kudo";
+        karate12.yearsOfPractice = 2;
+        karate12.hasBlackBelt = false;
+        karate12.instructorName = "Instructor Babu";
+        karate12.trainingHoursPerWeek = 3.3;
+        */
 
-        Karate k14 = new Karate();
-        k14.beltRank = 1;
-		k14.style = "Shotokan";
-		k14.yearsOfPractice = 1; 
-		k14.hasBlackBelt = false;
-		k14.instructorName = "Sensei Kim"; 
-		k14.trainingHoursPerWeek = 5.0;
-        System.out.println("Karate 14:");
-        System.out.println("Belt Rank: " + k14.beltRank);
-        System.out.println("Style: " + k14.style);
-        System.out.println("Years of Practice: " + k14.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k14.hasBlackBelt);
-        System.out.println("Instructor Name: " + k14.instructorName);
-        System.out.println("Training Hours per Week: " + k14.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate13 = new Karate(13, "Seidokaikan", 4, true, "Shihan Rao", 6.1);
+		            karate13.getInfo() ;
+        /*
+        karate13.beltRank = 13;
+        karate13.style = "Seidokaikan";
+        karate13.yearsOfPractice = 4;
+        karate13.hasBlackBelt = true;
+        karate13.instructorName = "Shihan Rao";
+        karate13.trainingHoursPerWeek = 6.1;
+        */
 
-        Karate k15 = new Karate();
-        k15.beltRank = 3; 
-		k15.style = "Kyokushin";
-		k15.yearsOfPractice = 6;
-		k15.hasBlackBelt = false;
-		k15.instructorName = "Sensei Watanabe"; 
-		k15.trainingHoursPerWeek = 8.5;
-        System.out.println("Karate 15:");
-        System.out.println("Belt Rank: " + k15.beltRank);
-        System.out.println("Style: " + k15.style);
-        System.out.println("Years of Practice: " + k15.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k15.hasBlackBelt);
-        System.out.println("Instructor Name: " + k15.instructorName);
-        System.out.println("Training Hours per Week: " + k15.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate14 = new Karate(14, "Shinkyokushin", 5, true, "Master Jin", 7.5);
+		karate14.getInfo() ;
+        /*
+        karate14.beltRank = 14;
+        karate14.style = "Shinkyokushin";
+        karate14.yearsOfPractice = 5;
+        karate14.hasBlackBelt = true;
+        karate14.instructorName = "Master Jin";
+        karate14.trainingHoursPerWeek = 7.5;
+        */
 
-        Karate k16 = new Karate();
-        k16.beltRank = 5; k16.style = "Goju-ryu"; k16.yearsOfPractice = 9; k16.hasBlackBelt = true; k16.instructorName = "Sensei Honda"; k16.trainingHoursPerWeek = 11.5;
-        System.out.println("Karate 16:");
-        System.out.println("Belt Rank: " + k16.beltRank);
-        System.out.println("Style: " + k16.style);
-        System.out.println("Years of Practice: " + k16.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k16.hasBlackBelt);
-        System.out.println("Instructor Name: " + k16.instructorName);
-        System.out.println("Training Hours per Week: " + k16.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate15 = new Karate(15, "Kenpo", 2, false, "Instructor Mehta", 4.4);
+karate15.getInfo();
+        /*
+        karate15.beltRank = 15;
+        karate15.style = "Kenpo";
+        karate15.yearsOfPractice = 2;
+        karate15.hasBlackBelt = false;
+        karate15.instructorName = "Instructor Mehta";
+        karate15.trainingHoursPerWeek = 4.4;
+        */
 
-        Karate k17 = new Karate();
-        k17.beltRank = 2; 
-		k17.style = "Shotokan"; 
-		k17.yearsOfPractice = 4; 
-		k17.hasBlackBelt = false;
-		k17.instructorName = "Sensei Lee";
-		k17.trainingHoursPerWeek = 7.0;
-        System.out.println("Karate 17:");
-        System.out.println("Belt Rank: " + k17.beltRank);
-        System.out.println("Style: " + k17.style);
-        System.out.println("Years of Practice: " + k17.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k17.hasBlackBelt);
-        System.out.println("Instructor Name: " + k17.instructorName);
-        System.out.println("Training Hours per Week: " + k17.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate16 = new Karate(16, "Tang Soo Do", 6, true, "Sensei Omar", 8.2);
+		karate16.getInfo();
+        
+        /*
+        karate16.beltRank = 16;
+        karate16.style = "Tang Soo Do";
+        karate16.yearsOfPractice = 6;
+        karate16.hasBlackBelt = true;
+        karate16.instructorName = "Sensei Omar";
+        karate16.trainingHoursPerWeek = 8.2;
+        */
 
-        Karate k18 = new Karate();
-        k18.beltRank = 4; 
-		k18.style = "Wado-ryu"; 
-		k18.yearsOfPractice = 7;
-		k18.hasBlackBelt = true;
-		k18.instructorName = "Sensei Nakamura"; 
-		k18.trainingHoursPerWeek = 9.5;
-        System.out.println("Karate 18:");
-        System.out.println("Belt Rank: " + k18.beltRank);
-        System.out.println("Style: " + k18.style);
-        System.out.println("Years of Practice: " + k18.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k18.hasBlackBelt);
-        System.out.println("Instructor Name: " + k18.instructorName);
-        System.out.println("Training Hours per Week: " + k18.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate17 = new Karate(17, "American Karate", 3, true, "Sensei Ram", 5.9);
+		karate17.getInfo();
+        /*
+        karate17.beltRank = 17;
+        karate17.style = "American Karate";
+        karate17.yearsOfPractice = 3;
+        karate17.hasBlackBelt = true;
+        karate17.instructorName = "Sensei Ram";
+        karate17.trainingHoursPerWeek = 5.9;
+        */
 
-        Karate k19 = new Karate();
-        k19.beltRank = 6; 
-		k19.style = "Kyokushin";
-		k19.yearsOfPractice = 11;
-		k19.hasBlackBelt = true; 
-		k19.instructorName = "Sensei Watanabe"; 
-		k19.trainingHoursPerWeek = 12.0;
-        System.out.println("Karate 19:");
-        System.out.println("Belt Rank: " + k19.beltRank);
-        System.out.println("Style: " + k19.style);
-        System.out.println("Years of Practice: " + k19.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k19.hasBlackBelt);
-        System.out.println("Instructor Name: " + k19.instructorName);
-        System.out.println("Training Hours per Week: " + k19.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate18 = new Karate(18, "Kempo", 1, false, "Instructor Sunil", 2.7);
+        /*
+        karate18.beltRank = 18;
+        karate18.style = "Kempo";
+        karate18.yearsOfPractice = 1;
+        karate18.hasBlackBelt = false;
+        karate18.instructorName = "Instructor Sunil";
+        karate18.trainingHoursPerWeek = 2.7;
+        */
 
-        Karate k20 = new Karate();
-        k20.beltRank = 3; 
-		k20.style = "Shotokan";
-		k20.yearsOfPractice = 5;
-		k20.hasBlackBelt = false;
-		k20.instructorName = "Sensei Kim"; 
-		k20.trainingHoursPerWeek = 7.0;
-        System.out.println("Karate 20:");
-        System.out.println("Belt Rank: " + k20.beltRank);
-        System.out.println("Style: " + k20.style);
-        System.out.println("Years of Practice: " + k20.yearsOfPractice);
-        System.out.println("Has Black Belt: " + k20.hasBlackBelt);
-        System.out.println("Instructor Name: " + k20.instructorName);
-        System.out.println("Training Hours per Week: " + k20.trainingHoursPerWeek);
-        System.out.println();
+        Karate karate19 = new Karate(19, "Budokan", 4, true, "Shihan Roy", 6.3);
+		 karate19.getInfo();
+        /*
+        karate19.beltRank = 19;
+        karate19.style = "Budokan";
+        karate19.yearsOfPractice = 4;
+        karate19.hasBlackBelt = true;
+        karate19.instructorName = "Shihan Roy";
+        karate19.trainingHoursPerWeek = 6.3;
+        */
+
+        Karate karate20 = new Karate(20, "Bando", 5, true, "Sensei Das", 7.1);
+		 karate20.getInfo();
+        /*
+        karate20.beltRank = 20;
+        karate20.style = "Bando";
+        karate20.yearsOfPractice = 5;
+        karate20.hasBlackBelt = true;
+        karate20.instructorName = "Sensei Das";
+        karate20.trainingHoursPerWeek = 7.1;
+        */   
+          
+    
     }
 }

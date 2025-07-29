@@ -1,0 +1,250 @@
+class PoliticianRunner {
+    public static void main(String[] args) {
+
+        System.out.println("Main started");
+
+        Politician p1 = new Politician(1, "Narendra Modi", "BJP", "Gujarat", 73, "Prime Minister", 30000000.0);
+        /*
+        p1.politicianId = 1;
+        p1.name = "Narendra Modi";
+        p1.party = "BJP";
+        p1.state = "Gujarat";
+        p1.age = 73;
+        p1.position = "Prime Minister";
+        p1.netWorth = 30000000.0;
+        */
+
+        Politician p2 = new Politician(2, "Rahul Gandhi", "INC", "Kerala", 54, "MP", 20000000.0);
+        /*
+        p2.politicianId = 2;
+        p2.name = "Rahul Gandhi";
+        p2.party = "INC";
+        p2.state = "Kerala";
+        p2.age = 54;
+        p2.position = "MP";
+        p2.netWorth = 20000000.0;
+        */
+
+        Politician p3 = new Politician(3, "Amit Shah", "BJP", "Gujarat", 60, "Home Minister", 25000000.0);
+        /*
+        p3.politicianId = 3;
+        p3.name = "Amit Shah";
+        p3.party = "BJP";
+        p3.state = "Gujarat";
+        p3.age = 60;
+        p3.position = "Home Minister";
+        p3.netWorth = 25000000.0;
+        */
+
+        Politician p4 = new Politician(4, "Mamata Banerjee", "TMC", "West Bengal", 69, "CM", 15000000.0);
+        /*
+        p4.politicianId = 4;
+        p4.name = "Mamata Banerjee";
+        p4.party = "TMC";
+        p4.state = "West Bengal";
+        p4.age = 69;
+        p4.position = "CM";
+        p4.netWorth = 15000000.0;
+        */
+
+        Politician p5 = new Politician(5, "Arvind Kejriwal", "AAP", "Delhi", 56, "CM", 18000000.0);
+        /*
+        p5.politicianId = 5;
+        p5.name = "Arvind Kejriwal";
+        p5.party = "AAP";
+        p5.state = "Delhi";
+        p5.age = 56;
+        p5.position = "CM";
+        p5.netWorth = 18000000.0;
+        */
+
+        Politician p6 = new Politician(6, "Yogi Adityanath", "BJP", "Uttar Pradesh", 52, "CM", 12000000.0);
+        /*
+        p6.politicianId = 6;
+        p6.name = "Yogi Adityanath";
+        p6.party = "BJP";
+        p6.state = "Uttar Pradesh";
+        p6.age = 52;
+        p6.position = "CM";
+        p6.netWorth = 12000000.0;
+        */
+
+        Politician p7 = new Politician(7, "Sharad Pawar", "NCP", "Maharashtra", 83, "Party Chief", 50000000.0);
+        /*
+        p7.politicianId = 7;
+        p7.name = "Sharad Pawar";
+        p7.party = "NCP";
+        p7.state = "Maharashtra";
+        p7.age = 83;
+        p7.position = "Party Chief";
+        p7.netWorth = 50000000.0;
+        */
+
+        Politician p8 = new Politician(8, "Uddhav Thackeray", "Shiv Sena", "Maharashtra", 63, "Party Leader", 35000000.0);
+        /*
+        p8.politicianId = 8;
+        p8.name = "Uddhav Thackeray";
+        p8.party = "Shiv Sena";
+        p8.state = "Maharashtra";
+        p8.age = 63;
+        p8.position = "Party Leader";
+        p8.netWorth = 35000000.0;
+        */
+
+        Politician p9 = new Politician(9, "K. Chandrashekar Rao", "BRS", "Telangana", 70, "CM", 40000000.0);
+        /*
+        p9.politicianId = 9;
+        p9.name = "K. Chandrashekar Rao";
+        p9.party = "BRS";
+        p9.state = "Telangana";
+        p9.age = 70;
+        p9.position = "CM";
+        p9.netWorth = 40000000.0;
+        */
+
+        Politician p10 = new Politician(10, "MK Stalin", "DMK", "Tamil Nadu", 71, "CM", 30000000.0);
+        /*
+        p10.politicianId = 10;
+        p10.name = "MK Stalin";
+        p10.party = "DMK";
+        p10.state = "Tamil Nadu";
+        p10.age = 71;
+        p10.position = "CM";
+        p10.netWorth = 30000000.0;
+        */
+
+        Politician p11 = new Politician(11, "Nitish Kumar", "JDU", "Bihar", 73, "CM", 22000000.0);
+        /*
+        p11.politicianId = 11;
+        p11.name = "Nitish Kumar";
+        p11.party = "JDU";
+        p11.state = "Bihar";
+        p11.age = 73;
+        p11.position = "CM";
+        p11.netWorth = 22000000.0;
+        */
+
+        Politician p12 = new Politician(12, "Hemant Soren", "JMM", "Jharkhand", 48, "CM", 10000000.0);
+        /*
+        p12.politicianId = 12;
+        p12.name = "Hemant Soren";
+        p12.party = "JMM";
+        p12.state = "Jharkhand";
+        p12.age = 48;
+        p12.position = "CM";
+        p12.netWorth = 10000000.0;
+        */
+
+        Politician p13 = new Politician(13, "Bhupesh Baghel", "INC", "Chhattisgarh", 63, "CM", 15000000.0);
+        /*
+        p13.politicianId = 13;
+        p13.name = "Bhupesh Baghel";
+        p13.party = "INC";
+        p13.state = "Chhattisgarh";
+        p13.age = 63;
+        p13.position = "CM";
+        p13.netWorth = 15000000.0;
+        */
+
+        Politician p14 = new Politician(14, "Ashok Gehlot", "INC", "Rajasthan", 72, "CM", 18000000.0);
+        /*
+        p14.politicianId = 14;
+        p14.name = "Ashok Gehlot";
+        p14.party = "INC";
+        p14.state = "Rajasthan";
+        p14.age = 72;
+        p14.position = "CM";
+        p14.netWorth = 18000000.0;
+        */
+
+        Politician p15 = new Politician(15, "Basavaraj Bommai", "BJP", "Karnataka", 63, "Former CM", 25000000.0);
+        /*
+        p15.politicianId = 15;
+        p15.name = "Basavaraj Bommai";
+        p15.party = "BJP";
+        p15.state = "Karnataka";
+        p15.age = 63;
+        p15.position = "Former CM";
+        p15.netWorth = 25000000.0;
+        */
+
+        Politician p16 = new Politician(16, "Siddaramaiah", "INC", "Karnataka", 75, "CM", 20000000.0);
+        /*
+        p16.politicianId = 16;
+        p16.name = "Siddaramaiah";
+        p16.party = "INC";
+        p16.state = "Karnataka";
+        p16.age = 75;
+        p16.position = "CM";
+        p16.netWorth = 20000000.0;
+        */
+
+        Politician p17 = new Politician(17, "Naveen Patnaik", "BJD", "Odisha", 77, "CM", 28000000.0);
+        /*
+        p17.politicianId = 17;
+        p17.name = "Naveen Patnaik";
+        p17.party = "BJD";
+        p17.state = "Odisha";
+        p17.age = 77;
+        p17.position = "CM";
+        p17.netWorth = 28000000.0;
+        */
+
+        Politician p18 = new Politician(18, "Pinarayi Vijayan", "CPI(M)", "Kerala", 78, "CM", 24000000.0);
+        /*
+        p18.politicianId = 18;
+        p18.name = "Pinarayi Vijayan";
+        p18.party = "CPI(M)";
+        p18.state = "Kerala";
+        p18.age = 78;
+        p18.position = "CM";
+        p18.netWorth = 24000000.0;
+        */
+
+        Politician p19 = new Politician(19, "Manohar Lal Khattar", "BJP", "Haryana", 70, "Former CM", 19000000.0);
+        /*
+        p19.politicianId = 19;
+        p19.name = "Manohar Lal Khattar";
+        p19.party = "BJP";
+        p19.state = "Haryana";
+        p19.age = 70;
+        p19.position = "Former CM";
+        p19.netWorth = 19000000.0;
+        */
+
+        Politician p20 = new Politician(20, "Bhagwant Mann", "AAP", "Punjab", 51, "CM", 17000000.0);
+        /*
+        p20.politicianId = 20;
+        p20.name = "Bhagwant Mann";
+        p20.party = "AAP";
+        p20.state = "Punjab";
+        p20.age = 51;
+        p20.position = "CM";
+        p20.netWorth = 17000000.0;
+        */
+
+        // Print all politician info
+        p1.printPoliticianInfo();
+        p2.printPoliticianInfo();
+        p3.printPoliticianInfo();
+        p4.printPoliticianInfo();
+        p5.printPoliticianInfo();
+        p6.printPoliticianInfo();
+        p7.printPoliticianInfo();
+        p8.printPoliticianInfo();
+        p9.printPoliticianInfo();
+        p10.printPoliticianInfo();
+        p11.printPoliticianInfo();
+        p12.printPoliticianInfo();
+        p13.printPoliticianInfo();
+        p14.printPoliticianInfo();
+        p15.printPoliticianInfo();
+        p16.printPoliticianInfo();
+        p17.printPoliticianInfo();
+        p18.printPoliticianInfo();
+        p19.printPoliticianInfo();
+        p20.printPoliticianInfo();
+
+        System.out.println("Main ended");
+    }
+}

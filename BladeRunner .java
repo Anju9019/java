@@ -2,7 +2,8 @@ class BladeRunner {
     public static void main(String[] args) {
         System.out.println("Main started");
 
-        Blade blade1 = new Blade();
+        Blade blade1 = new Blade(1, "L", "Red", "Cotton", "Raymond", 1500.0, "Female");
+        /*
         blade1.bladeId = 1;
         blade1.size = "L";
         blade1.color = "Red";
@@ -10,10 +11,10 @@ class BladeRunner {
         blade1.brand = "Raymond";
         blade1.price = 1500.0;
         blade1.gender = "Female";
-        printBladeDetails(blade1);
-
-        // 2nd Blade
-        Blade blade2 = new Blade();
+        */
+        
+        Blade blade2 = new Blade(2, "M", "Black", "Nylon", "Narrow", 1599.0, "Male");
+        /*
         blade2.bladeId = 2;
         blade2.size = "M";
         blade2.color = "Black";
@@ -21,10 +22,10 @@ class BladeRunner {
         blade2.brand = "Narrow";
         blade2.price = 1599.0;
         blade2.gender = "Male";
-        printBladeDetails(blade2);
-
-        // 3rd Blade
-        Blade blade3 = new Blade();
+        */
+        
+        Blade blade3 = new Blade(3, "M", "Red", "Wool", "Louis Philippe", 1999.0, "Female");
+        /*
         blade3.bladeId = 3;
         blade3.size = "M";
         blade3.color = "Red";
@@ -32,10 +33,10 @@ class BladeRunner {
         blade3.brand = "Louis Philippe";
         blade3.price = 1999.0;
         blade3.gender = "Female";
-        printBladeDetails(blade3);
-
-        // 4th Blade
-        Blade blade4 = new Blade();
+        */
+        
+        Blade blade4 = new Blade(4, "L", "Royal Blue", "Linen", "Van Heusen", 2000.0, "Male");
+        /*
         blade4.bladeId = 4;
         blade4.size = "L";
         blade4.color = "Royal Blue";
@@ -43,10 +44,10 @@ class BladeRunner {
         blade4.brand = "Van Heusen";
         blade4.price = 2000.0;
         blade4.gender = "Male";
-        printBladeDetails(blade4);
-
-        // 5th Blade
-        Blade blade5 = new Blade();
+        */
+        
+        Blade blade5 = new Blade(5, "XL", "Grey", "Polyester", "Arrow", 2500.0, "Female");
+        /*
         blade5.bladeId = 5;
         blade5.size = "XL";
         blade5.color = "Grey";
@@ -54,10 +55,10 @@ class BladeRunner {
         blade5.brand = "Arrow";
         blade5.price = 2500.0;
         blade5.gender = "Female";
-        printBladeDetails(blade5);
-
-        // 6th Blade
-        Blade blade6 = new Blade();
+        */
+        
+        Blade blade6 = new Blade(6, "XXL", "Cream", "Tweed", "Peter England", 2999.0, "Male");
+        /*
         blade6.bladeId = 6;
         blade6.size = "XXL";
         blade6.color = "Cream";
@@ -65,10 +66,10 @@ class BladeRunner {
         blade6.brand = "Peter England";
         blade6.price = 2999.0;
         blade6.gender = "Male";
-        printBladeDetails(blade6);
-
-        // 7th Blade
-        Blade blade7 = new Blade();
+        */
+        
+        Blade blade7 = new Blade(7, "XS", "Light Blue", "Tweed", "Allen Solly", 1599.0, "Female");
+        /*
         blade7.bladeId = 7;
         blade7.size = "XS";
         blade7.color = "Light Blue";
@@ -76,10 +77,10 @@ class BladeRunner {
         blade7.brand = "Allen Solly";
         blade7.price = 1599.0;
         blade7.gender = "Female";
-        printBladeDetails(blade7);
-
-        // 8th Blade
-        Blade blade8 = new Blade();
+        */
+        
+        Blade blade8 = new Blade(8, "S", "Baby Pink", "Velvet", "Blackberrys", 1750.0, "Male");
+        /*
         blade8.bladeId = 8;
         blade8.size = "S";
         blade8.color = "Baby Pink";
@@ -87,10 +88,10 @@ class BladeRunner {
         blade8.brand = "Blackberrys";
         blade8.price = 1750.0;
         blade8.gender = "Male";
-        printBladeDetails(blade8);
-
-        // 9th Blade
-        Blade blade9 = new Blade();
+        */
+        
+        Blade blade9 = new Blade(9, "L", "Red", "Corduroy", "Park Avenue", 1399.0, "Female");
+        /*
         blade9.bladeId = 9;
         blade9.size = "L";
         blade9.color = "Red";
@@ -98,10 +99,10 @@ class BladeRunner {
         blade9.brand = "Park Avenue";
         blade9.price = 1399.0;
         blade9.gender = "Female";
-        printBladeDetails(blade9);
-
-        // 10th Blade
-        Blade blade10 = new Blade();
+        */
+        
+        Blade blade10 = new Blade(10, "M", "Yellow", "Cotton", "Zara", 1400.0, "Male");
+        /*
         blade10.bladeId = 10;
         blade10.size = "M";
         blade10.color = "Yellow";
@@ -109,10 +110,10 @@ class BladeRunner {
         blade10.brand = "Zara";
         blade10.price = 1400.0;
         blade10.gender = "Male";
-        printBladeDetails(blade10);
-
-        // 11th Blade
-        Blade blade11 = new Blade();
+        */
+        
+        Blade blade11 = new Blade(11, "L", "Peach", "Silk", "H&M", 1299.0, "Female");
+        /*
         blade11.bladeId = 11;
         blade11.size = "L";
         blade11.color = "Peach";
@@ -120,10 +121,10 @@ class BladeRunner {
         blade11.brand = "H&M";
         blade11.price = 1299.0;
         blade11.gender = "Female";
-        printBladeDetails(blade11);
-
-        // 12th Blade
-        Blade blade12 = new Blade();
+        */
+        
+        Blade blade12 = new Blade(12, "S", "Black", "Nylon", "Arrow", 1599.0, "Male");
+        /*
         blade12.bladeId = 12;
         blade12.size = "S";
         blade12.color = "Black";
@@ -131,10 +132,10 @@ class BladeRunner {
         blade12.brand = "Arrow";
         blade12.price = 1599.0;
         blade12.gender = "Male";
-        printBladeDetails(blade12);
-
-        // 13th Blade
-        Blade blade13 = new Blade();
+        */
+        
+        Blade blade13 = new Blade(13, "M", "Red", "Wool", "Louis Philippe", 1999.0, "Female");
+        /*
         blade13.bladeId = 13;
         blade13.size = "M";
         blade13.color = "Red";
@@ -142,10 +143,10 @@ class BladeRunner {
         blade13.brand = "Louis Philippe";
         blade13.price = 1999.0;
         blade13.gender = "Female";
-        printBladeDetails(blade13);
-
-        // 14th Blade
-        Blade blade14 = new Blade();
+        */
+        
+        Blade blade14 = new Blade(14, "L", "Royal Blue", "Linen", "Van Heusen", 2000.0, "Male");
+        /*
         blade14.bladeId = 14;
         blade14.size = "L";
         blade14.color = "Royal Blue";
@@ -153,10 +154,10 @@ class BladeRunner {
         blade14.brand = "Van Heusen";
         blade14.price = 2000.0;
         blade14.gender = "Male";
-        printBladeDetails(blade14);
-
-        // 15th Blade
-        Blade blade15 = new Blade();
+        */
+        
+        Blade blade15 = new Blade(15, "XL", "Grey", "Polyester", "Arrow", 2500.0, "Female");
+        /*
         blade15.bladeId = 15;
         blade15.size = "XL";
         blade15.color = "Grey";
@@ -164,10 +165,10 @@ class BladeRunner {
         blade15.brand = "Arrow";
         blade15.price = 2500.0;
         blade15.gender = "Female";
-        printBladeDetails(blade15);
-
-        // 16th Blade
-        Blade blade16 = new Blade();
+        */
+        
+        Blade blade16 = new Blade(16, "XXL", "Cream", "Tweed", "Peter England", 2999.0, "Male");
+        /*
         blade16.bladeId = 16;
         blade16.size = "XXL";
         blade16.color = "Cream";
@@ -175,10 +176,10 @@ class BladeRunner {
         blade16.brand = "Peter England";
         blade16.price = 2999.0;
         blade16.gender = "Male";
-        printBladeDetails(blade16);
-
-        // 17th Blade
-        Blade blade17 = new Blade();
+        */
+        
+        Blade blade17 = new Blade(17, "XS", "Light Blue", "Tweed", "Allen Solly", 1599.0, "Female");
+        /*
         blade17.bladeId = 17;
         blade17.size = "XS";
         blade17.color = "Light Blue";
@@ -186,10 +187,10 @@ class BladeRunner {
         blade17.brand = "Allen Solly";
         blade17.price = 1599.0;
         blade17.gender = "Female";
-        printBladeDetails(blade17);
-
-        // 18th Blade
-        Blade blade18 = new Blade();
+        */
+        
+        Blade blade18 = new Blade(18, "S", "Baby Pink", "Velvet", "Blackberrys", 1750.0, "Male");
+        /*
         blade18.bladeId = 18;
         blade18.size = "S";
         blade18.color = "Baby Pink";
@@ -197,10 +198,10 @@ class BladeRunner {
         blade18.brand = "Blackberrys";
         blade18.price = 1750.0;
         blade18.gender = "Male";
-        printBladeDetails(blade18);
-
-        // 19th Blade
-        Blade blade19 = new Blade();
+        */
+        
+        Blade blade19 = new Blade(19, "M", "Purple", "Cotton", "Zara", 1400.0, "Male");
+        /*
         blade19.bladeId = 19;
         blade19.size = "M";
         blade19.color = "Purple";
@@ -208,10 +209,10 @@ class BladeRunner {
         blade19.brand = "Zara";
         blade19.price = 1400.0;
         blade19.gender = "Male";
-        printBladeDetails(blade19);
-
-        // 20th Blade
-        Blade blade20 = new Blade();
+        */
+        
+        Blade blade20 = new Blade(20, "L", "Green", "Silk", "H&M", 1299.0, "Female");
+        /*
         blade20.bladeId = 20;
         blade20.size = "L";
         blade20.color = "Green";
@@ -219,9 +220,30 @@ class BladeRunner {
         blade20.brand = "H&M";
         blade20.price = 1299.0;
         blade20.gender = "Female";
-        printBladeDetails(blade20);
+        */
+
+      
+        blade1.getBladeInfo();
+        blade2.getBladeInfo();
+        blade3.getBladeInfo();
+        blade4.getBladeInfo();
+        blade5.getBladeInfo();
+        blade6.getBladeInfo();
+        blade7.getBladeInfo();
+        blade8.getBladeInfo();
+        blade9.getBladeInfo();
+        blade10.getBladeInfo();
+        blade11.getBladeInfo();
+        blade12.getBladeInfo();
+        blade13.getBladeInfo();
+        blade14.getBladeInfo();
+        blade15.getBladeInfo();
+        blade16.getBladeInfo();
+        blade17.getBladeInfo();
+        blade18.getBladeInfo();
+        blade19.getBladeInfo();
+        blade20.getBladeInfo();
 
         System.out.println("Main ended");
     }
-
 }

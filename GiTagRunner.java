@@ -1,291 +1,226 @@
-class GiTagRunner{
-public sttaic void main(String[] king){
+class GiTagRunner {
+    public static void main(String[] args) {
 
-System.out.println("main started");
-GiTag g1 = new GiTag();
-g1.giId = 101;
-System.out.println(g1.giId);
-g1.productName = "Mysore Silk";
-System.out.println(g1.productName);
-g1.originPlace = "Karnataka";
-System.out.println(g1.originPlace);
-g1.yearGranted = 2005;
-System.out.println(g1.yearGranted);
-g1.productCategory = "Textile";
-System.out.println(g1.productCategory);
-g1.isExported = true;
-System.out.println(g1.isExported);
+        GiTag gi1 = new GiTag(1, "Darjeeling Tea", "West Bengal", 2004, "Tea", true);
+        /*
+        gi1.giId = 1;
+        gi1.productName = "Darjeeling Tea";
+        gi1.originPlace = "West Bengal";
+        gi1.yearGranted = 2004;
+        gi1.productCategory = "Tea";
+        gi1.isExported = true;
+        */
 
-GiTag g2 = new GiTag();
-g2.giId = 102;
-System.out.println(g2.giId);
-g2.productName = "Darjeeling Tea";
-System.out.println(g2.productName);
-g2.originPlace = "West Bengal";
-System.out.println(g2.originPlace);
-g2.yearGranted = 2004;
-System.out.println(g2.yearGranted);
-g2.productCategory = "Beverage";
-System.out.println(g2.productCategory);
-g2.isExported = true;
-System.out.println(g2.isExported);
+        GiTag gi2 = new GiTag(2, "Kanchipuram Silk", "Tamil Nadu", 2005, "Silk", true);
+        /*
+        gi2.giId = 2;
+        gi2.productName = "Kanchipuram Silk";
+        gi2.originPlace = "Tamil Nadu";
+        gi2.yearGranted = 2005;
+        gi2.productCategory = "Silk";
+        gi2.isExported = true;
+        */
 
-GiTag g3 = new GiTag();
-g3.giId = 103;
-System.out.println(g3.giId);
-g3.productName = "Kanjeevaram Silk";
-System.out.println(g3.productName);
-g3.originPlace = "Tamil Nadu";
-System.out.println(g3.originPlace);
-g3.yearGranted = 2006;
-System.out.println(g3.yearGranted);
-g3.productCategory = "Textile";
-System.out.println(g3.productCategory);
-g3.isExported = false;
-System.out.println(g3.isExported);
+        GiTag gi3 = new GiTag(3, "Alphonso Mango", "Maharashtra", 2006, "Fruit", true);
+        /*
+        gi3.giId = 3;
+        gi3.productName = "Alphonso Mango";
+        gi3.originPlace = "Maharashtra";
+        gi3.yearGranted = 2006;
+        gi3.productCategory = "Fruit";
+        gi3.isExported = true;
+        */
 
-GiTag g4 = new GiTag();
-g4.giId = 104;
-System.out.println(g4.giId);
-g4.productName = "Alphonso Mango";
-System.out.println(g4.productName);
-g4.originPlace = "Maharashtra";
-System.out.println(g4.originPlace);
-g4.yearGranted = 2007;
-System.out.println(g4.yearGranted);
-g4.productCategory = "Fruit";
-System.out.println(g4.productCategory);
-g4.isExported = true;
-System.out.println(g4.isExported);
+        GiTag gi4 = new GiTag(4, "Basmati Rice", "Punjab", 2008, "Rice", true);
+        /*
+        gi4.giId = 4;
+        gi4.productName = "Basmati Rice";
+        gi4.originPlace = "Punjab";
+        gi4.yearGranted = 2008;
+        gi4.productCategory = "Rice";
+        gi4.isExported = true;
+        */
 
-GiTag g5 = new GiTag();
-g5.giId = 105;
-System.out.println(g5.giId);
-g5.productName = "Kolhapuri Chappal";
-System.out.println(g5.productName);
-g5.originPlace = "Maharashtra";
-System.out.println(g5.originPlace);
-g5.yearGranted = 2009;
-System.out.println(g5.yearGranted);
-g5.productCategory = "Footwear";
-System.out.println(g5.productCategory);
-g5.isExported = true;
-System.out.println(g5.isExported);
+        GiTag gi5 = new GiTag(5, "Nagpur Orange", "Maharashtra", 2010, "Fruit", true);
+        /*
+        gi5.giId = 5;
+        gi5.productName = "Nagpur Orange";
+        gi5.originPlace = "Maharashtra";
+        gi5.yearGranted = 2010;
+        gi5.productCategory = "Fruit";
+        gi5.isExported = true;
+        */
 
-GiTag g6 = new GiTag();
-g6.giId = 106;
-System.out.println(g6.giId);
-g6.productName = "Banarasi Saree";
-System.out.println(g6.productName);
-g6.originPlace = "Uttar Pradesh";
-System.out.println(g6.originPlace);
-g6.yearGranted = 2009;
-System.out.println(g6.yearGranted);
-g6.productCategory = "Textile";
-System.out.println(g6.productCategory);
-g6.isExported = true;
-System.out.println(g6.isExported);
+        GiTag gi6 = new GiTag(6, "Malabar Pepper", "Kerala", 2007, "Spice", true);
+        /*
+        gi6.giId = 6;
+        gi6.productName = "Malabar Pepper";
+        gi6.originPlace = "Kerala";
+        gi6.yearGranted = 2007;
+        gi6.productCategory = "Spice";
+        gi6.isExported = true;
+        */
 
-GiTag g7 = new GiTag();
-g7.giId = 107;
-System.out.println(g7.giId);
-g7.productName = "Pochampally Ikat";
-System.out.println(g7.productName);
-g7.originPlace = "Telangana";
-System.out.println(g7.originPlace);
-g7.yearGranted = 2005;
-System.out.println(g7.yearGranted);
-g7.productCategory = "Textile";
-System.out.println(g7.productCategory);
-g7.isExported = false;
-System.out.println(g7.isExported);
+        GiTag gi7 = new GiTag(7, "Mysore Sandalwood", "Karnataka", 2009, "Wood", true);
+        /*
+        gi7.giId = 7;
+        gi7.productName = "Mysore Sandalwood";
+        gi7.originPlace = "Karnataka";
+        gi7.yearGranted = 2009;
+        gi7.productCategory = "Wood";
+        gi7.isExported = true;
+        */
 
-GiTag g8 = new GiTag();
-g8.giId = 108;
-System.out.println(g8.giId);
-g8.productName = "Channapatna Toys";
-System.out.println(g8.productName);
-g8.originPlace = "Karnataka";
-System.out.println(g8.originPlace);
-g8.yearGranted = 2006;
-System.out.println(g8.yearGranted);
-g8.productCategory = "Handicraft";
-System.out.println(g8.productCategory);
-g8.isExported = true;
-System.out.println(g8.isExported);
+        GiTag gi8 = new GiTag(8, "Pochampally Ikat", "Telangana", 2012, "Textile", true);
+        /*
+        gi8.giId = 8;
+        gi8.productName = "Pochampally Ikat";
+        gi8.originPlace = "Telangana";
+        gi8.yearGranted = 2012;
+        gi8.productCategory = "Textile";
+        gi8.isExported = true;
+        */
 
-GiTag g9 = new GiTag();
-g9.giId = 109;
-System.out.println(g9.giId);
-g9.productName = "Nagpur Orange";
-System.out.println(g9.productName);
-g9.originPlace = "Maharashtra";
-System.out.println(g9.originPlace);
-g9.yearGranted = 2014;
-System.out.println(g9.yearGranted);
-g9.productCategory = "Fruit";
-System.out.println(g9.productCategory);
-g9.isExported = true;
-System.out.println(g9.isExported);
+        GiTag gi9 = new GiTag(9, "Kolhapuri Chappal", "Maharashtra", 2013, "Footwear", true);
+        /*
+        gi9.giId = 9;
+        gi9.productName = "Kolhapuri Chappal";
+        gi9.originPlace = "Maharashtra";
+        gi9.yearGranted = 2013;
+        gi9.productCategory = "Footwear";
+        gi9.isExported = true;
+        */
 
-GiTag g10 = new GiTag();
-g10.giId = 110;
-System.out.println(g10.giId);
-g10.productName = "Aranmula Kannadi";
-System.out.println(g10.productName);
-g10.originPlace = "Kerala";
-System.out.println(g10.originPlace);
-g10.yearGranted = 2005;
-System.out.println(g10.yearGranted);
-g10.productCategory = "Handicraft";
-System.out.println(g10.productCategory);
-g10.isExported = false;
-System.out.println(g10.isExported);
+        GiTag gi10 = new GiTag(10, "Kashmiri Pashmina", "Jammu & Kashmir", 2011, "Wool", true);
+        /*
+        gi10.giId = 10;
+        gi10.productName = "Kashmiri Pashmina";
+        gi10.originPlace = "Jammu & Kashmir";
+        gi10.yearGranted = 2011;
+        gi10.productCategory = "Wool";
+        gi10.isExported = true;
+        */
 
-GiTag g11 = new GiTag();
-g11.giId = 111;
-System.out.println(g11.giId);
-g11.productName = "Bikaneri Bhujia";
-System.out.println(g11.productName);
-g11.originPlace = "Rajasthan";
-System.out.println(g11.originPlace);
-g11.yearGranted = 2010;
-System.out.println(g11.yearGranted);
-g11.productCategory = "Food";
-System.out.println(g11.productCategory);
-g11.isExported = true;
-System.out.println(g11.isExported);
+        GiTag gi11 = new GiTag(11, "Thanjavur Paintings", "Tamil Nadu", 2014, "Art", false);
+        /*
+        gi11.giId = 11;
+        gi11.productName = "Thanjavur Paintings";
+        gi11.originPlace = "Tamil Nadu";
+        gi11.yearGranted = 2014;
+        gi11.productCategory = "Art";
+        gi11.isExported = false;
+        */
 
-GiTag g12 = new GiTag();
-g12.giId = 112;
-System.out.println(g12.giId);
-g12.productName = "Bastar Dhokra";
-System.out.println(g12.productName);
-g12.originPlace = "Chhattisgarh";
-System.out.println(g12.originPlace);
-g12.yearGranted = 2008;
-System.out.println(g12.yearGranted);
-g12.productCategory = "Handicraft";
-System.out.println(g12.productCategory);
-g12.isExported = false;
-System.out.println(g12.isExported);
+        GiTag gi12 = new GiTag(12, "Banarasi Saree", "Uttar Pradesh", 2015, "Textile", true);
+        /*
+        gi12.giId = 12;
+        gi12.productName = "Banarasi Saree";
+        gi12.originPlace = "Uttar Pradesh";
+        gi12.yearGranted = 2015;
+        gi12.productCategory = "Textile";
+        gi12.isExported = true;
+        */
 
-GiTag g13 = new GiTag();
-g13.giId = 113;
-System.out.println(g13.giId);
-g13.productName = "Hyderabadi Haleem";
-System.out.println(g13.productName);
-g13.originPlace = "Telangana";
-System.out.println(g13.originPlace);
-g13.yearGranted = 2010;
-System.out.println(g13.yearGranted);
-g13.productCategory = "Food";
-System.out.println(g13.productCategory);
-g13.isExported = true;
-System.out.println(g13.isExported);
+        GiTag gi13 = new GiTag(13, "Kullu Shawl", "Himachal Pradesh", 2016, "Wool", false);
+        /*
+        gi13.giId = 13;
+        gi13.productName = "Kullu Shawl";
+        gi13.originPlace = "Himachal Pradesh";
+        gi13.yearGranted = 2016;
+        gi13.productCategory = "Wool";
+        gi13.isExported = false;
+        */
 
-GiTag g14 = new GiTag();
-g14.giId = 114;
-System.out.println(g14.giId);
-g14.productName = "Mysore Agarbathi";
-System.out.println(g14.productName);
-g14.originPlace = "Karnataka";
-System.out.println(g14.originPlace);
-g14.yearGranted = 2006;
-System.out.println(g14.yearGranted);
-g14.productCategory = "Fragrance";
-System.out.println(g14.productCategory);
-g14.isExported = true;
-System.out.println(g14.isExported);
+        GiTag gi14 = new GiTag(14, "Kokrajhar Bamboo", "Assam", 2017, "Craft", false);
+        /*
+        gi14.giId = 14;
+        gi14.productName = "Kokrajhar Bamboo";
+        gi14.originPlace = "Assam";
+        gi14.yearGranted = 2017;
+        gi14.productCategory = "Craft";
+        gi14.isExported = false;
+        */
 
-GiTag g15 = new GiTag();
-g15.giId = 115;
-System.out.println(g15.giId);
-g15.productName = "Tanjore Paintings";
-System.out.println(g15.productName);
-g15.originPlace = "Tamil Nadu";
-System.out.println(g15.originPlace);
-g15.yearGranted = 2007;
-System.out.println(g15.yearGranted);
-g15.productCategory = "Art";
-System.out.println(g15.productCategory);
-g15.isExported = false;
-System.out.println(g15.isExported);
+        GiTag gi15 = new GiTag(15, "Assam Silk", "Assam", 2018, "Silk", true);
+        /*
+        gi15.giId = 15;
+        gi15.productName = "Assam Silk";
+        gi15.originPlace = "Assam";
+        gi15.yearGranted = 2018;
+        gi15.productCategory = "Silk";
+        gi15.isExported = true;
+        */
 
-GiTag g16 = new GiTag();
-g16.giId = 116;
-System.out.println(g16.giId);
-g16.productName = "Assam Tea";
-System.out.println(g16.productName);
-g16.originPlace = "Assam";
-System.out.println(g16.originPlace);
-g16.yearGranted = 2003;
-System.out.println(g16.yearGranted);
-g16.productCategory = "Beverage";
-System.out.println(g16.productCategory);
-g16.isExported = true;
-System.out.println(g16.isExported);
+        GiTag gi16 = new GiTag(16, "Nagaland Naga Shawl", "Nagaland", 2019, "Textile", false);
+        /*
+        gi16.giId = 16;
+        gi16.productName = "Nagaland Naga Shawl";
+        gi16.originPlace = "Nagaland";
+        gi16.yearGranted = 2019;
+        gi16.productCategory = "Textile";
+        gi16.isExported = false;
+        */
 
-GiTag g17 = new GiTag();
-g17.giId = 117;
-System.out.println(g17.giId);
-g17.productName = "Solapur Chaddar";
-System.out.println(g17.productName);
-g17.originPlace = "Maharashtra";
-System.out.println(g17.originPlace);
-g17.yearGranted = 2009;
-System.out.println(g17.yearGranted);
-g17.productCategory = "Textile";
-System.out.println(g17.productCategory);
-g17.isExported = true;
-System.out.println(g17.isExported);
+        GiTag gi17 = new GiTag(17, "Phulkari", "Punjab", 2020, "Embroidery", true);
+        /*
+        gi17.giId = 17;
+        gi17.productName = "Phulkari";
+        gi17.originPlace = "Punjab";
+        gi17.yearGranted = 2020;
+        gi17.productCategory = "Embroidery";
+        gi17.isExported = true;
+        */
 
-GiTag g18 = new GiTag();
-g18.giId = 118;
-System.out.println(g18.giId);
-g18.productName = "Manipur Black Rice";
-System.out.println(g18.productName);
-g18.originPlace = "Manipur";
-System.out.println(g18.originPlace);
-g18.yearGranted = 2014;
-System.out.println(g18.yearGranted);
-g18.productCategory = "Grain";
-System.out.println(g18.productCategory);
-g18.isExported = false;
-System.out.println(g18.isExported);
+        GiTag gi18 = new GiTag(18, "Coorg Orange", "Karnataka", 2021, "Fruit", false);
+        /*
+        gi18.giId = 18;
+        gi18.productName = "Coorg Orange";
+        gi18.originPlace = "Karnataka";
+        gi18.yearGranted = 2021;
+        gi18.productCategory = "Fruit";
+        gi18.isExported = false;
+        */
 
-GiTag g19 = new GiTag();
-g19.giId = 119;
-System.out.println(g19.giId);
-g19.productName = "Kullu Shawl";
-System.out.println(g19.productName);
-g19.originPlace = "Himachal Pradesh";
-System.out.println(g19.originPlace);
-g19.yearGranted = 2005;
-System.out.println(g19.yearGranted);
-g19.productCategory = "Textile";
-System.out.println(g19.productCategory);
-g19.isExported = true;
-System.out.println(g19.isExported);
+        GiTag gi19 = new GiTag(19, "Bikaneri Bhujia", "Rajasthan", 2022, "Snack", true);
+        /*
+        gi19.giId = 19;
+        gi19.productName = "Bikaneri Bhujia";
+        gi19.originPlace = "Rajasthan";
+        gi19.yearGranted = 2022;
+        gi19.productCategory = "Snack";
+        gi19.isExported = true;
+        */
 
-GiTag g20 = new GiTag();
-g20.giId = 120;
-System.out.println(g20.giId);
-g20.productName = "Kashmir Pashmina";
-System.out.println(g20.productName);
-g20.originPlace = "Jammu & Kashmir";
-System.out.println(g20.originPlace);
-g20.yearGranted = 2008;
-System.out.println(g20.yearGranted);
-g20.productCategory = "Textile";
-System.out.println(g20.productCategory);
-g20.isExported = true;
-System.out.println(g20.isExported);
+        GiTag gi20 = new GiTag(20, "Madurai Sungudi", "Tamil Nadu", 2023, "Textile", false);
+        /*
+        gi20.giId = 20;
+        gi20.productName = "Madurai Sungudi";
+        gi20.originPlace = "Tamil Nadu";
+        gi20.yearGranted = 2023;
+        gi20.productCategory = "Textile";
+        gi20.isExported = false;
+        */
 
-
-
-System.out.println("main ended");
-
-
-}
+        // Print info
+        gi1.printGiTagInfo();
+        gi2.printGiTagInfo();
+        gi3.printGiTagInfo();
+        gi4.printGiTagInfo();
+        gi5.printGiTagInfo();
+        gi6.printGiTagInfo();
+        gi7.printGiTagInfo();
+        gi8.printGiTagInfo();
+        gi9.printGiTagInfo();
+        gi10.printGiTagInfo();
+        gi11.printGiTagInfo();
+        gi12.printGiTagInfo();
+        gi13.printGiTagInfo();
+        gi14.printGiTagInfo();
+        gi15.printGiTagInfo();
+        gi16.printGiTagInfo();
+        gi17.printGiTagInfo();
+        gi18.printGiTagInfo();
+        gi19.printGiTagInfo();
+        gi20.printGiTagInfo();
+    }
 }

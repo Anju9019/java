@@ -1,347 +1,250 @@
- class WeaponRunner {
+class WeaponRunner {
     public static void main(String[] args) {
-        System.out.println("main started");
 
-        Weapon weapon1 = new Weapon();
+        System.out.println("Main started");
+
+        Weapon weapon1 = new Weapon(1, "Excalibur", "Sword", 5.5, "Steel", 1200.0, "Medieval combat");
+        /*
         weapon1.weaponId = 1;
-        weapon1.name = "Katana";
+        weapon1.name = "Excalibur";
         weapon1.type = "Sword";
+        weapon1.weight = 5.5;
         weapon1.material = "Steel";
-        weapon1.weight = 1.2;
-        weapon1.price = 1500.0;
-        weapon1.origin = "Japan";
+        weapon1.price = 1200.0;
+        weapon1.usage = "Medieval combat";
+        */
 
-        System.out.println("weapon id: " + weapon1.weaponId);
-        System.out.println("name: " + weapon1.name);
-        System.out.println("type: " + weapon1.type);
-        System.out.println("material: " + weapon1.material);
-        System.out.println("weight: " + weapon1.weight + " kg");
-        System.out.println("price: $" + weapon1.price);
-        System.out.println("origin: " + weapon1.origin);
-
-        Weapon weapon2 = new Weapon();
+        Weapon weapon2 = new Weapon(2, "AK-47", "Rifle", 4.3, "Alloy Steel", 35000.0, "Modern warfare");
+        /*
         weapon2.weaponId = 2;
-        weapon2.name = "Crossbow";
-        weapon2.type = "Bow";
-        weapon2.material = "Wood and Steel";
-        weapon2.weight = 2.5;
-        weapon2.price = 1200.0;
-        weapon2.origin = "Europe";
+        weapon2.name = "AK-47";
+        weapon2.type = "Rifle";
+        weapon2.weight = 4.3;
+        weapon2.material = "Alloy Steel";
+        weapon2.price = 35000.0;
+        weapon2.usage = "Modern warfare";
+        */
 
-        System.out.println("weapon id: " + weapon2.weaponId);
-        System.out.println("name: " + weapon2.name);
-        System.out.println("type: " + weapon2.type);
-        System.out.println("material: " + weapon2.material);
-        System.out.println("weight: " + weapon2.weight + " kg");
-        System.out.println("price: $" + weapon2.price);
-        System.out.println("origin: " + weapon2.origin);
-
-        Weapon weapon3 = new Weapon();
+        Weapon weapon3 = new Weapon(3, "Katana", "Sword", 3.2, "Tamahagane Steel", 5000.0, "Samurai combat");
+        /*
         weapon3.weaponId = 3;
-        weapon3.name = "Dagger";
-        weapon3.type = "Knife";
-        weapon3.material = "Steel";
-        weapon3.weight = 0.5;
-        weapon3.price = 300.0;
-        weapon3.origin = "Global";
+        weapon3.name = "Katana";
+        weapon3.type = "Sword";
+        weapon3.weight = 3.2;
+        weapon3.material = "Tamahagane Steel";
+        weapon3.price = 5000.0;
+        weapon3.usage = "Samurai combat";
+        */
 
-        System.out.println("weapon id: " + weapon3.weaponId);
-        System.out.println("name: " + weapon3.name);
-        System.out.println("type: " + weapon3.type);
-        System.out.println("material: " + weapon3.material);
-        System.out.println("weight: " + weapon3.weight + " kg");
-        System.out.println("price: $" + weapon3.price);
-        System.out.println("origin: " + weapon3.origin);
-
-        Weapon weapon4 = new Weapon();
+        Weapon weapon4 = new Weapon(4, "Desert Eagle", "Pistol", 1.9, "Aluminum Alloy", 1500.0, "Personal defense");
+        /*
         weapon4.weaponId = 4;
-        weapon4.name = "War Hammer";
-        weapon4.type = "Hammer";
-        weapon4.material = "Iron";
-        weapon4.weight = 4.0;
-        weapon4.price = 1800.0;
-        weapon4.origin = "Europe";
+        weapon4.name = "Desert Eagle";
+        weapon4.type = "Pistol";
+        weapon4.weight = 1.9;
+        weapon4.material = "Aluminum Alloy";
+        weapon4.price = 1500.0;
+        weapon4.usage = "Personal defense";
+        */
 
-        System.out.println("weapon id: " + weapon4.weaponId);
-        System.out.println("name: " + weapon4.name);
-        System.out.println("type: " + weapon4.type);
-        System.out.println("material: " + weapon4.material);
-        System.out.println("weight: " + weapon4.weight + " kg");
-        System.out.println("price: $" + weapon4.price);
-        System.out.println("origin: " + weapon4.origin);
-
-        Weapon weapon5 = new Weapon();
+        Weapon weapon5 = new Weapon(5, "Longbow", "Bow", 2.5, "Yew Wood", 800.0, "Archery");
+        /*
         weapon5.weaponId = 5;
         weapon5.name = "Longbow";
         weapon5.type = "Bow";
-        weapon5.material = "Wood";
-        weapon5.weight = 1.8;
+        weapon5.weight = 2.5;
+        weapon5.material = "Yew Wood";
         weapon5.price = 800.0;
-        weapon5.origin = "England";
+        weapon5.usage = "Archery";
+        */
 
-        System.out.println("weapon id: " + weapon5.weaponId);
-        System.out.println("name: " + weapon5.name);
-        System.out.println("type: " + weapon5.type);
-        System.out.println("material: " + weapon5.material);
-        System.out.println("weight: " + weapon5.weight + " kg");
-        System.out.println("price: $" + weapon5.price);
-        System.out.println("origin: " + weapon5.origin);
-    }
-}
-
-        Weapon weapon6 = new Weapon();
+        Weapon weapon6 = new Weapon(6, "M16", "Assault Rifle", 3.8, "Composite Steel", 20000.0, "Military use");
+        /*
         weapon6.weaponId = 6;
-        weapon6.name = "Desert Eagle";
-        weapon6.type = "Pistol";
-        weapon6.material = "Steel";
-        weapon6.weight = 1.8;
-        weapon6.price = 1600.0;
-        weapon6.origin = "USA";
+        weapon6.name = "M16";
+        weapon6.type = "Assault Rifle";
+        weapon6.weight = 3.8;
+        weapon6.material = "Composite Steel";
+        weapon6.price = 20000.0;
+        weapon6.usage = "Military use";
+        */
 
-        System.out.println("weapon id: " + weapon6.weaponId);
-        System.out.println("name: " + weapon6.name);
-        System.out.println("type: " + weapon6.type);
-        System.out.println("material: " + weapon6.material);
-        System.out.println("weight: " + weapon6.weight + " kg");
-        System.out.println("price: $" + weapon6.price);
-        System.out.println("origin: " + weapon6.origin);
-
-        Weapon weapon7 = new Weapon();
+        Weapon weapon7 = new Weapon(7, "Claymore", "Sword", 6.0, "Carbon Steel", 2500.0, "Scottish combat");
+        /*
         weapon7.weaponId = 7;
-        weapon7.name = "AK-47";
-        weapon7.type = "Rifle";
-        weapon7.material = "Steel and Wood";
-        weapon7.weight = 4.3;
-        weapon7.price = 1100.0;
-        weapon7.origin = "Russia";
+        weapon7.name = "Claymore";
+        weapon7.type = "Sword";
+        weapon7.weight = 6.0;
+        weapon7.material = "Carbon Steel";
+        weapon7.price = 2500.0;
+        weapon7.usage = "Scottish combat";
+        */
 
-        System.out.println("weapon id: " + weapon7.weaponId);
-        System.out.println("name: " + weapon7.name);
-        System.out.println("type: " + weapon7.type);
-        System.out.println("material: " + weapon7.material);
-        System.out.println("weight: " + weapon7.weight + " kg");
-        System.out.println("price: $" + weapon7.price);
-        System.out.println("origin: " + weapon7.origin);
-
-        Weapon weapon8 = new Weapon();
+        Weapon weapon8 = new Weapon(8, "Glock 19", "Pistol", 0.9, "Polymer", 900.0, "Law enforcement");
+        /*
         weapon8.weaponId = 8;
-        weapon8.name = "Throwing Axe";
-        weapon8.type = "Axe";
-        weapon8.material = "Iron";
-        weapon8.weight = 2.0;
-        weapon8.price = 250.0;
-        weapon8.origin = "Viking";
+        weapon8.name = "Glock 19";
+        weapon8.type = "Pistol";
+        weapon8.weight = 0.9;
+        weapon8.material = "Polymer";
+        weapon8.price = 900.0;
+        weapon8.usage = "Law enforcement";
+        */
 
-        System.out.println("weapon id: " + weapon8.weaponId);
-        System.out.println("name: " + weapon8.name);
-        System.out.println("type: " + weapon8.type);
-        System.out.println("material: " + weapon8.material);
-        System.out.println("weight: " + weapon8.weight + " kg");
-        System.out.println("price: $" + weapon8.price);
-        System.out.println("origin: " + weapon8.origin);
-
-        Weapon weapon9 = new Weapon();
+        Weapon weapon9 = new Weapon(9, "Bazooka", "Rocket Launcher", 12.0, "Steel", 50000.0, "Anti-tank warfare");
+        /*
         weapon9.weaponId = 9;
-        weapon9.name = "Flintlock Pistol";
-        weapon9.type = "Pistol";
-        weapon9.material = "Steel and Wood";
-        weapon9.weight = 1.0;
-        weapon9.price = 500.0;
-        weapon9.origin = "Europe";
+        weapon9.name = "Bazooka";
+        weapon9.type = "Rocket Launcher";
+        weapon9.weight = 12.0;
+        weapon9.material = "Steel";
+        weapon9.price = 50000.0;
+        weapon9.usage = "Anti-tank warfare";
+        */
 
-        System.out.println("weapon id: " + weapon9.weaponId);
-        System.out.println("name: " + weapon9.name);
-        System.out.println("type: " + weapon9.type);
-        System.out.println("material: " + weapon9.material);
-        System.out.println("weight: " + weapon9.weight + " kg");
-        System.out.println("price: $" + weapon9.price);
-        System.out.println("origin: " + weapon9.origin);
-
-        Weapon weapon10 = new Weapon();
+        Weapon weapon10 = new Weapon(10, "Halberd", "Polearm", 4.7, "Iron", 1100.0, "Medieval infantry");
+        /*
         weapon10.weaponId = 10;
-        weapon10.name = "Scimitar";
-        weapon10.type = "Sword";
-        weapon10.material = "Damascus Steel";
-        weapon10.weight = 1.5;
-        weapon10.price = 1300.0;
-        weapon10.origin = "Middle East";
+        weapon10.name = "Halberd";
+        weapon10.type = "Polearm";
+        weapon10.weight = 4.7;
+        weapon10.material = "Iron";
+        weapon10.price = 1100.0;
+        weapon10.usage = "Medieval infantry";
+        */
 
-        System.out.println("weapon id: " + weapon10.weaponId);
-        System.out.println("name: " + weapon10.name);
-        System.out.println("type: " + weapon10.type);
-        System.out.println("material: " + weapon10.material);
-        System.out.println("weight: " + weapon10.weight + " kg");
-        System.out.println("price: $" + weapon10.price);
-        System.out.println("origin: " + weapon10.origin);
-
-        Weapon weapon11 = new Weapon();
+        Weapon weapon11 = new Weapon(11, "Crossbow", "Bow", 3.3, "Oak Wood", 1500.0, "Silent hunting");
+        /*
         weapon11.weaponId = 11;
-        weapon11.name = "Halberd";
-        weapon11.type = "Polearm";
-        weapon11.material = "Steel";
-        weapon11.weight = 6.5;
-        weapon11.price = 800.0;
-        weapon11.origin = "Europe";
+        weapon11.name = "Crossbow";
+        weapon11.type = "Bow";
+        weapon11.weight = 3.3;
+        weapon11.material = "Oak Wood";
+        weapon11.price = 1500.0;
+        weapon11.usage = "Silent hunting";
+        */
 
-        System.out.println("weapon id: " + weapon11.weaponId);
-        System.out.println("name: " + weapon11.name);
-        System.out.println("type: " + weapon11.type);
-        System.out.println("material: " + weapon11.material);
-        System.out.println("weight: " + weapon11.weight + " kg");
-        System.out.println("price: $" + weapon11.price);
-        System.out.println("origin: " + weapon11.origin);
-
-        Weapon weapon12 = new Weapon();
+        Weapon weapon12 = new Weapon(12, "MP5", "Submachine Gun", 2.8, "Alloy Steel", 18000.0, "Special forces");
+        /*
         weapon12.weaponId = 12;
-        weapon12.name = "Rapier";
-        weapon12.type = "Sword";
-        weapon12.material = "Steel";
-        weapon12.weight = 1.1;
-        weapon12.price = 1100.0;
-        weapon12.origin = "Europe";
+        weapon12.name = "MP5";
+        weapon12.type = "Submachine Gun";
+        weapon12.weight = 2.8;
+        weapon12.material = "Alloy Steel";
+        weapon12.price = 18000.0;
+        weapon12.usage = "Special forces";
+        */
 
-        System.out.println("weapon id: " + weapon12.weaponId);
-        System.out.println("name: " + weapon12.name);
-        System.out.println("type: " + weapon12.type);
-        System.out.println("material: " + weapon12.material);
-        System.out.println("weight: " + weapon12.weight + " kg");
-        System.out.println("price: $" + weapon12.price);
-        System.out.println("origin: " + weapon12.origin);
-
-        Weapon weapon13 = new Weapon();
+        Weapon weapon13 = new Weapon(13, "Warhammer", "Blunt", 7.5, "Iron", 1300.0, "Heavy melee");
+        /*
         weapon13.weaponId = 13;
-        weapon13.name = "Trident";
-        weapon13.type = "Spear";
-        weapon13.material = "Steel";
-        weapon13.weight = 2.5;
-        weapon13.price = 600.0;
-        weapon13.origin = "Greece";
+        weapon13.name = "Warhammer";
+        weapon13.type = "Blunt";
+        weapon13.weight = 7.5;
+        weapon13.material = "Iron";
+        weapon13.price = 1300.0;
+        weapon13.usage = "Heavy melee";
+        */
 
-        System.out.println("weapon id: " + weapon13.weaponId);
-        System.out.println("name: " + weapon13.name);
-        System.out.println("type: " + weapon13.type);
-        System.out.println("material: " + weapon13.material);
-        System.out.println("weight: " + weapon13.weight + " kg");
-        System.out.println("price: $" + weapon13.price);
-        System.out.println("origin: " + weapon13.origin);
-
-        Weapon weapon14 = new Weapon();
+        Weapon weapon14 = new Weapon(14, "FN SCAR", "Assault Rifle", 3.9, "Polymer & Steel", 25000.0, "Modern combat");
+        /*
         weapon14.weaponId = 14;
-        weapon14.name = "Machete";
-        weapon14.type = "Knife";
-        weapon14.material = "Carbon Steel";
-        weapon14.weight = 1.3;
-        weapon14.price = 450.0;
-        weapon14.origin = "South America";
+        weapon14.name = "FN SCAR";
+        weapon14.type = "Assault Rifle";
+        weapon14.weight = 3.9;
+        weapon14.material = "Polymer & Steel";
+        weapon14.price = 25000.0;
+        weapon14.usage = "Modern combat";
+        */
 
-        System.out.println("weapon id: " + weapon14.weaponId);
-        System.out.println("name: " + weapon14.name);
-        System.out.println("type: " + weapon14.type);
-        System.out.println("material: " + weapon14.material);
-        System.out.println("weight: " + weapon14.weight + " kg");
-        System.out.println("price: $" + weapon14.price);
-        System.out.println("origin: " + weapon14.origin);
-
-        Weapon weapon15 = new Weapon();
+        Weapon weapon15 = new Weapon(15, "Morning Star", "Blunt", 5.0, "Steel", 1000.0, "Medieval melee");
+        /*
         weapon15.weaponId = 15;
-        weapon15.name = "Composite Bow";
-        weapon15.type = "Bow";
-        weapon15.material = "Wood, Horn, Sinew";
-        weapon15.weight = 1.8;
-        weapon15.price = 900.0;
-        weapon15.origin = "Mongolia";
+        weapon15.name = "Morning Star";
+        weapon15.type = "Blunt";
+        weapon15.weight = 5.0;
+        weapon15.material = "Steel";
+        weapon15.price = 1000.0;
+        weapon15.usage = "Medieval melee";
+        */
 
-        System.out.println("weapon id: " + weapon15.weaponId);
-        System.out.println("name: " + weapon15.name);
-        System.out.println("type: " + weapon15.type);
-        System.out.println("material: " + weapon15.material);
-        System.out.println("weight: " + weapon15.weight + " kg");
-        System.out.println("price: $" + weapon15.price);
-        System.out.println("origin: " + weapon15.origin);
-
-        Weapon weapon16 = new Weapon();
+        Weapon weapon16 = new Weapon(16, "Dragunov", "Sniper Rifle", 4.5, "Alloy Steel", 30000.0, "Long-range shooting");
+        /*
         weapon16.weaponId = 16;
-        weapon16.name = "War Hammer";
-        weapon16.type = "Hammer";
-        weapon16.material = "Steel and Wood";
-        weapon16.weight = 7.0;
-        weapon16.price = 750.0;
-        weapon16.origin = "Europe";
+        weapon16.name = "Dragunov";
+        weapon16.type = "Sniper Rifle";
+        weapon16.weight = 4.5;
+        weapon16.material = "Alloy Steel";
+        weapon16.price = 30000.0;
+        weapon16.usage = "Long-range shooting";
+        */
 
-        System.out.println("weapon id: " + weapon16.weaponId);
-        System.out.println("name: " + weapon16.name);
-        System.out.println("type: " + weapon16.type);
-        System.out.println("material: " + weapon16.material);
-        System.out.println("weight: " + weapon16.weight + " kg");
-        System.out.println("price: $" + weapon16.price);
-        System.out.println("origin: " + weapon16.origin);
-
-        Weapon weapon17 = new Weapon();
+        Weapon weapon17 = new Weapon(17, "Sai", "Dagger", 1.2, "Steel", 700.0, "Martial arts");
+        /*
         weapon17.weaponId = 17;
-        weapon17.name = "Chakram";
-        weapon17.type = "Throwing Weapon";
+        weapon17.name = "Sai";
+        weapon17.type = "Dagger";
+        weapon17.weight = 1.2;
         weapon17.material = "Steel";
-        weapon17.weight = 0.5;
-        weapon17.price = 400.0;
-        weapon17.origin = "India";
+        weapon17.price = 700.0;
+        weapon17.usage = "Martial arts";
+        */
 
-        System.out.println("weapon id: " + weapon17.weaponId);
-        System.out.println("name: " + weapon17.name);
-        System.out.println("type: " + weapon17.type);
-        System.out.println("material: " + weapon17.material);
-        System.out.println("weight: " + weapon17.weight + " kg");
-        System.out.println("price: $" + weapon17.price);
-        System.out.println("origin: " + weapon17.origin);
-
-        Weapon weapon18 = new Weapon();
+        Weapon weapon18 = new Weapon(18, "Mace", "Blunt", 6.2, "Iron", 1200.0, "Medieval knights");
+        /*
         weapon18.weaponId = 18;
-        weapon18.name = "Sabre";
-        weapon18.type = "Sword";
-        weapon18.material = "Steel";
-        weapon18.weight = 1.4;
-        weapon18.price = 1150.0;
-        weapon18.origin = "Europe";
+        weapon18.name = "Mace";
+        weapon18.type = "Blunt";
+        weapon18.weight = 6.2;
+        weapon18.material = "Iron";
+        weapon18.price = 1200.0;
+        weapon18.usage = "Medieval knights";
+        */
 
-        System.out.println("weapon id: " + weapon18.weaponId);
-        System.out.println("name: " + weapon18.name);
-        System.out.println("type: " + weapon18.type);
-        System.out.println("material: " + weapon18.material);
-        System.out.println("weight: " + weapon18.weight + " kg");
-        System.out.println("price: $" + weapon18.price);
-        System.out.println("origin: " + weapon18.origin);
-
-        Weapon weapon19 = new Weapon();
+        Weapon weapon19 = new Weapon(19, "Uzi", "Submachine Gun", 2.1, "Steel", 15000.0, "Close combat");
+        /*
         weapon19.weaponId = 19;
-        weapon19.name = "Throwing Knives";
-        weapon19.type = "Knife";
+        weapon19.name = "Uzi";
+        weapon19.type = "Submachine Gun";
+        weapon19.weight = 2.1;
         weapon19.material = "Steel";
-        weapon19.weight = 0.3;
-        weapon19.price = 200.0;
-        weapon19.origin = "Various";
+        weapon19.price = 15000.0;
+        weapon19.usage = "Close combat";
+        */
 
-        System.out.println("weapon id: " + weapon19.weaponId);
-        System.out.println("name: " + weapon19.name);
-        System.out.println("type: " + weapon19.type);
-        System.out.println("material: " + weapon19.material);
-        System.out.println("weight: " + weapon19.weight + " kg");
-        System.out.println("price: $" + weapon19.price);
-        System.out.println("origin: " + weapon19.origin);
-
-        Weapon weapon20 = new Weapon();
+        Weapon weapon20 = new Weapon(20, "Naginata", "Polearm", 4.2, "Steel & Wood", 2200.0, "Japanese warriors");
+        /*
         weapon20.weaponId = 20;
-        weapon20.name = "Blunderbuss";
-        weapon20.type = "Firearm";
-        weapon20.material = "Steel and Wood";
-        weapon20.weight = 3.0;
-        weapon20.price = 700.0;
-        weapon20.origin = "Europe";
+        weapon20.name = "Naginata";
+        weapon20.type = "Polearm";
+        weapon20.weight = 4.2;
+        weapon20.material = "Steel & Wood";
+        weapon20.price = 2200.0;
+        weapon20.usage = "Japanese warriors";
+        */
 
-        System.out.println("weapon id: " + weapon20.weaponId);
-        System.out.println("name: " + weapon20.name);
-        System.out.println("type: " + weapon20.type);
-        System.out.println("material: " + weapon20.material);
-        System.out.println("weight: " + weapon20.weight + " kg");
-        System.out.println("price: $" + weapon20.price);
-        System.out.println("origin: " + weapon20.origin);
+        // Printing all weapons
+        weapon1.printWeaponInfo();
+        weapon2.printWeaponInfo();
+        weapon3.printWeaponInfo();
+        weapon4.printWeaponInfo();
+        weapon5.printWeaponInfo();
+        weapon6.printWeaponInfo();
+        weapon7.printWeaponInfo();
+        weapon8.printWeaponInfo();
+        weapon9.printWeaponInfo();
+        weapon10.printWeaponInfo();
+        weapon11.printWeaponInfo();
+        weapon12.printWeaponInfo();
+        weapon13.printWeaponInfo();
+        weapon14.printWeaponInfo();
+        weapon15.printWeaponInfo();
+        weapon16.printWeaponInfo();
+        weapon17.printWeaponInfo();
+        weapon18.printWeaponInfo();
+        weapon19.printWeaponInfo();
+        weapon20.printWeaponInfo();
+
+        System.out.println("Main ended");
     }
 }
